@@ -1,0 +1,13 @@
+{
+  "version": "0.2.1",
+  "build": "20261017045151",
+  "sourceCommit": "2cc63e16ac3729362a88b7d0594a113ae71575b1",
+  "sourceTag": "v0.2.1",
+  "sha256": "ad4523f8e2c404fde5f89ea00636059de646d5d9ae0cf815d91f4e820d135d96",
+  "asset": "NotchApp.zip",
+  "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.1/NotchApp.zip",
+  "architecture": [
+    "arm64"
+  ],
+  "minimumSystemVersion": "14.0"
+}
