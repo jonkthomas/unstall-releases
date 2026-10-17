@@ -1,18 +1,18 @@
 {
-  "version": "0.2.2",
-  "build": "20261017200223",
-  "sourceCommit": "4a90ce3260f3b213df9dde93344b046048479606",
-  "sourceTag": "v0.2.2",
-  "sha256": "281bf4f77e7b73ab1316899c2f4ebf874f1682975e62c604b1baef80385343a4",
-  "asset": "NotchApp.zip",
-  "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.2/NotchApp.zip",
+  "version": "0.2.3",
+  "build": "20261017204528",
+  "sourceCommit": "16b00a0908a3e57754da26e46cc65d73a9b2f444",
+  "sourceTag": "v0.2.3",
+  "sha256": "2d27ebda9a939d2bc108c3aafb9da10f4b4bfb2a781593c67eb2fe3f6ef61e60",
+  "asset": "Unstall.zip",
+  "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.3/Unstall.zip",
   "architecture": [
     "arm64"
   ],
   "minimumSystemVersion": "14.0",
   "installer": {
-    "asset": "NotchApp.dmg",
-    "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.2/NotchApp.dmg",
-    "sha256": "b7bb7972cb203e1be5f42aec6b9e10328a1582578c14999153223fb6533c5a75"
+    "asset": "Unstall.dmg",
+    "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.3/Unstall.dmg",
+    "sha256": "6d9a50420d1522e89b1afde0049cbab6b22d30dc4f0f33dc9e37393305a6c4ff"
   }
 }
