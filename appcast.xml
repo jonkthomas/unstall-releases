@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>NotchApp</title>
+        <item>
+            <title>0.2.1</title>
+            <pubDate>Sat, 17 Oct 2026 00:52:28 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261017045151</sparkle:version>
+            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[Unstall 0.2.1: native agent control and signed in-app updates.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.1/NotchApp.zip" length="5726537" type="application/octet-stream" sparkle:edSignature="vhYXsndOjBihRrU14PB6HzJqZ5UmTJGu0FBi1Lyq9tEuGSObMLIxzr8CZLeaeX4/Xm1FgtDWQ+NxNnD71ba0CQ=="/>
+        </item>
+    </channel>
+</rss>
