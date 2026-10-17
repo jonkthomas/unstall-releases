@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>NotchApp</title>
+        <title>Unstall</title>
         <item>
-            <title>0.2.2</title>
-            <pubDate>Sat, 17 Oct 2026 16:03:40 -0400</pubDate>
+            <title>0.2.3</title>
+            <pubDate>Sat, 17 Oct 2026 16:46:48 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261017200223</sparkle:version>
-            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
+            <sparkle:version>20261017204528</sparkle:version>
+            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text"><![CDATA[Unstall 0.2.2: native agent control and signed in-app updates.
+            <description sparkle:format="plain-text"><![CDATA[Unstall 0.2.3: native agent control and signed in-app updates.
 ]]></description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.2/NotchApp.zip" length="5748671" type="application/octet-stream" sparkle:edSignature="o5JXAH9yHNI6KXLzB9xdd83AhnhDVdFjM6fOxV/OLSDTO1dn1M5l9+K3fER3Z7AyzGRGOkBJw2wtaT5c5BZpCQ=="/>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.3/Unstall.zip" length="5747389" type="application/octet-stream" sparkle:edSignature="zZg8QroYlp/PZMDlubk/G+v2YWMUliDsvg6h4LM/Exy5ca0/NfdZni7AG0PMPnzLDrF9ZSb268+2zp4LABXWCg=="/>
         </item>
     </channel>
 </rss>
