@@ -1,0 +1,9 @@
+NotchAgent pi integration fork
+
+Based on ykushch/notchagent (https://github.com/ykushch/notchagent),
+licensed under the Apache License, Version 2.0. The upstream LICENSE is retained.
+
+Changes in this fork include pi harness parent/child discovery, root-only
+attention with a 30-second blocked grace period, explicit needs-human metadata
+and escalated-question decoding, read-only notchctl tree diagnostics, a distinct
+bundle identifier (co.schoolintel.notch-pi), and disabled upstream update checks.
