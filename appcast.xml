@@ -3,16 +3,16 @@
     <channel>
         <title>Unstall</title>
         <item>
-            <title>0.2.3</title>
-            <pubDate>Sat, 17 Oct 2026 16:46:48 -0400</pubDate>
+            <title>0.2.4</title>
+            <pubDate>Sat, 17 Oct 2026 17:31:54 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261017204528</sparkle:version>
-            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
+            <sparkle:version>20261017213034</sparkle:version>
+            <sparkle:shortVersionString>0.2.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text"><![CDATA[Unstall 0.2.3: native agent control and signed in-app updates.
+            <description sparkle:format="plain-text"><![CDATA[Unstall 0.2.4: native agent control and signed in-app updates.
 ]]></description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.3/Unstall.zip" length="5747389" type="application/octet-stream" sparkle:edSignature="zZg8QroYlp/PZMDlubk/G+v2YWMUliDsvg6h4LM/Exy5ca0/NfdZni7AG0PMPnzLDrF9ZSb268+2zp4LABXWCg=="/>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.2.4/Unstall.zip" length="5037576" type="application/octet-stream" sparkle:edSignature="NR4VBJNdSYyf5jJ5FLMBju0gK/DByG+zQU92w0XMCMM0+SQ7PXXMmnAIFF6p1hy6hVAUVbsXkX6i9cNAxR1yBg=="/>
         </item>
     </channel>
 </rss>
