@@ -1,18 +1,18 @@
 {
-  "version": "0.3.3",
-  "build": "20261018033043",
-  "sourceCommit": "4a483ad9794b5bb9a05636b22b830677fd06af15",
-  "sourceTag": "v0.3.3",
-  "sha256": "f2ae25d3e62ec816a4b4bfa01f91810a677797a6631289557675267c35d02a2e",
+  "version": "0.8.0",
+  "build": "20261018203611",
+  "sourceCommit": "bc7798a1ecad54fd297ae724c52fcf72c33be860",
+  "sourceTag": "v0.8.0",
+  "sha256": "bd8fe7794a038b82c211b01fe3c41b2af941f8814c30431bf200cae7875b3f60",
   "asset": "Unstall.zip",
-  "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.3.3/Unstall.zip",
+  "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.0/Unstall.zip",
   "architecture": [
     "arm64"
   ],
   "minimumSystemVersion": "14.0",
   "installer": {
     "asset": "Unstall.dmg",
-    "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.3.3/Unstall.dmg",
-    "sha256": "caaf501ae82ed1ffc839ce7d578e2c35848d941a28fdf202491c9147373b8fdd"
+    "downloadURL": "https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.0/Unstall.dmg",
+    "sha256": "e61bac48be2f022d439a08774c1d6ae8498a5dba1a8325ccb3faf8c9f86bdf42"
   }
 }
