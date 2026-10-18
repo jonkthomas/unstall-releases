@@ -246,7 +246,7 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
         <h2 id="req-h">What you need</h2>
         <dl class="req">
           <div><dt>Mac</dt><dd>Apple Silicon, macOS 14 Sonoma or later</dd></div>
-          <div><dt>Native agents</dt><dd>Run pi, Claude Code or Codex through the bundled <code>notch-agent</code> launcher. Plain, unwrapped terminal processes aren't automatically attached.</dd></div>
+          <div><dt>Agents</dt><dd>Connect Claude Code and Codex once in setup and every session shows up, in a terminal or the desktop apps. pi works through the bundled <code>notch-agent</code> launcher.</dd></div>
           <div><dt>herdr</dt><dd>Optional. Its sessions also provide supported agent prompts and status; OpenCode and Grok stay terminal-answerable.</dd></div>
           <div><dt>First install</dt><dd>Open the downloaded DMG, drag Unstall.app to Applications, then open it from Applications. Setup explains the native launcher commands.</dd></div>
           <div><dt>Permissions</dt><dd>None needed to start. Notifications are optional, and only for questions waiting on you.</dd></div>
@@ -261,7 +261,7 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
         </details>
         <details>
           <summary>Which agents does it work with?</summary>
-          <p>pi, Claude Code and Codex work through the bundled native launcher, without herdr. Existing herdr sessions are supported too. Anything that cannot be answered safely stays in its owning terminal; OpenCode and Grok are status-only through herdr. Unwrapped terminal processes are not automatically discovered.</p>
+          <p>Claude Code and Codex, in a terminal or the desktop apps, and pi, all without herdr. Click a session to open its exact terminal window or Codex thread. Answering questions works through the bundled launcher; desktop sessions show status and open the app. herdr sessions are supported too; OpenCode and Grok are status-only through herdr.</p>
         </details>
         <details>
           <summary>What happens to agents that report to another agent?</summary>
