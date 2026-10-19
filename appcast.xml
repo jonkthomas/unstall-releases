@@ -3,16 +3,25 @@
     <channel>
         <title>Unstall</title>
         <item>
-            <title>0.8.1</title>
-            <pubDate>Mon, 19 Oct 2026 09:53:09 -0400</pubDate>
+            <title>0.8.2</title>
+            <pubDate>Mon, 19 Oct 2026 18:30:14 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261019134854</sparkle:version>
-            <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
+            <sparkle:version>20261019222845</sparkle:version>
+            <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text"><![CDATA[Unstall 0.8.1: native agent control and signed in-app updates.
+            <description sparkle:format="plain-text"><![CDATA[Unstall 0.8.2 makes voice cards easier to follow and answer.
+
+- Each card opens before speaking and gives one plain sentence, without reading symbol names aloud.
+- A chime and glow show when Unstall is listening.
+- Answer with yes, no, an option, or your own words. Free-form replies are read back before sending.
+- A plain yes approves at once. Risky commands and free-form replies get one confirmation.
+
+Voice remains off by default. Existing preferences are preserved. Automatic update checks are enabled by default; installing an update remains your choice.
+
+The ZIP is for in-app updates. The DMG is for manual installation. Both are signed and notarized by Voxtur Inc.
 ]]></description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.1/Unstall.zip" length="14494939" type="application/octet-stream" sparkle:edSignature="iIJ3rTFUXwTrGpetRPixUzgF9Dc2jpLyndE1PNB+l37HW/QKTmI3sP9CTFRe7aYNF1yTe+ZRVfMOEoWQoWA0AA=="/>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.2/Unstall.zip" length="14590109" type="application/octet-stream" sparkle:edSignature="xodKg1Uu3lDg6BpoFj39BoRix2CcK42lJ7l0zjqfT5UZYRr9laTC5NI1S+4153SjeDu8HsJZ9duomyNFuNOJAQ=="/>
         </item>
     </channel>
 </rss>
