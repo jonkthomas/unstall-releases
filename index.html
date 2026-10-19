@@ -93,6 +93,14 @@ h2{font:500 clamp(30px,4.4vw,48px)/1.08 var(--serif); letter-spacing:-.02em; mar
 .shot.notches > div{display:grid; justify-items:center; gap:22px; padding:0 12px 30px; border-top:22px solid #1d1a17}
 .shot.notches > div + div{border-left:1px solid #3a3530}
 .shot.notches .notch{margin-top:-1px}
+.shot.rows{background:#1d1a17; place-items:stretch}
+.shot.rows ul{list-style:none; margin:0; padding:0; width:100%; max-width:470px; justify-self:center}
+.shot.rows li{display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:10px; align-items:baseline; padding:13px 4px; border-bottom:1px solid #332e29; color:#e4dfd6; font-size:15px}
+.shot.rows li:last-child{border-bottom:0}
+.shot.rows b{font-weight:600; white-space:nowrap}
+.shot.rows span, .shot.rows small{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.shot.rows small{font-size:13.5px; color:#9d978d}
+.shot.rows .wait{color:var(--coral)}
 .shot.notches span{display:inline-flex; align-items:center; gap:7px; font-size:13.5px; color:#e4dfd6}
 
 /* requirements + faq */
@@ -217,10 +225,25 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
         </figure>
       </article>
 
+      <article class="benefit" aria-labelledby="b1b">
+        <div>
+          <h3 id="b1b">Every agent, wherever it runs.</h3>
+          <p>Connect Claude Code and Codex once in setup. Then every session shows up: a plain <code>claude</code> or <code>codex</code> in your terminal, the Claude and Codex desktop apps, and herdr if you use it. Click one and Unstall opens its exact Terminal window, tab or Codex thread.</p>
+        </div>
+        <figure class="shot rows" style="margin:0" aria-label="Example notch list: Claude in Terminal waiting for you, Codex desktop working, Claude desktop idle.">
+          <ul>
+            <li><b>Claude · Terminal</b><span>acme-web</span><small class="wait">Waiting for you</small></li>
+            <li><b>Codex · Desktop</b><span>acme-api</span><small>Working</small></li>
+            <li><b>Claude · Desktop</b><span>notes</span><small>Idle</small></li>
+          </ul>
+          <figcaption>Click a row to open that window or thread.</figcaption>
+        </figure>
+      </article>
+
       <article class="benefit" aria-labelledby="b2">
         <div>
           <h3 id="b2">Answer right where the question appears.</h3>
-          <p>You see the question, what the agent just finished, and its choices, with the recommended answer marked. If none of the choices fit, type your own. If you'd rather answer in the terminal, Jump takes you to the exact tab.</p>
+          <p>You see the question, what the agent just finished, and its choices, with the recommended answer marked. If none of the choices fit, type your own. If you'd rather answer in the terminal, Jump takes you to the exact window and tab.</p>
         </div>
         <figure class="shot" style="margin:0">
           <img class="card" src="assets/frames/00140.png" width="520" height="420" loading="lazy" alt="The question card for agent acme-web: 'Tests pass. Open the pull request?' with three choices, 'Open it as a draft' marked recommended, and a box to type your own answer.">
@@ -248,7 +271,7 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
           <div><dt>Mac</dt><dd>Apple Silicon, macOS 14 Sonoma or later</dd></div>
           <div><dt>Agents</dt><dd>Connect Claude Code and Codex once in setup and every session shows up, in a terminal or the desktop apps. pi works through the bundled <code>notch-agent</code> launcher.</dd></div>
           <div><dt>herdr</dt><dd>Optional. Its sessions also provide supported agent prompts and status; OpenCode and Grok stay terminal-answerable.</dd></div>
-          <div><dt>First install</dt><dd>Open the downloaded DMG, drag Unstall.app to Applications, then open it from Applications. Setup explains the native launcher commands.</dd></div>
+          <div><dt>First install</dt><dd>Open the downloaded DMG, drag Unstall.app to Applications, then open it from Applications. Setup asks how you run your agents and connects Claude and Codex in one click each.</dd></div>
           <div><dt>Permissions</dt><dd>None needed to start. Notifications are optional, and only for questions waiting on you.</dd></div>
         </dl>
       </div>
