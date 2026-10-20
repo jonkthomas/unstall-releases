@@ -1,8 +1,19 @@
-<?xml version="1.0" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.8.3</title>
+            <pubDate>Tue, 20 Oct 2026 18:45:16 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261020224134</sparkle:version>
+            <sparkle:shortVersionString>0.8.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Unstall now shows Grok, Muse and OpenCode sessions in the notch, and Grok is no longer labelled as Claude. You can answer approvals from the notch by click or voice: OpenCode through its plugin, Grok when started with `notch-agent grok`, and Muse shell commands through its hook. Connect each agent in Settings first. Allow always only appears where the exact saved rule is known.</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.3/Unstall.zip" length="15817250" type="application/octet-stream" sparkle:edSignature="qHcysJXZ7RR2da0/imdAwemZifKfjbpxU6QKJT7BuXq+2djJGKUPXI4w29yJ0HElRU1WTXnddDJlyJYLX6nLDA==" />
+        </item>
+    <item>
             <title>0.8.2</title>
             <pubDate>Mon, 19 Oct 2026 18:30:14 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -10,7 +21,7 @@
             <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text"><![CDATA[Unstall 0.8.2 makes voice cards easier to follow and answer.
+            <description sparkle:format="plain-text">Unstall 0.8.2 makes voice cards easier to follow and answer.
 
 - Each card opens before speaking and gives one plain sentence, without reading symbol names aloud.
 - A chime and glow show when Unstall is listening.
@@ -20,8 +31,8 @@
 Voice remains off by default. Existing preferences are preserved. Automatic update checks are enabled by default; installing an update remains your choice.
 
 The ZIP is for in-app updates. The DMG is for manual installation. Both are signed and notarized by Voxtur Inc.
-]]></description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.2/Unstall.zip" length="14590109" type="application/octet-stream" sparkle:edSignature="xodKg1Uu3lDg6BpoFj39BoRix2CcK42lJ7l0zjqfT5UZYRr9laTC5NI1S+4153SjeDu8HsJZ9duomyNFuNOJAQ=="/>
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.2/Unstall.zip" length="14590109" type="application/octet-stream" sparkle:edSignature="xodKg1Uu3lDg6BpoFj39BoRix2CcK42lJ7l0zjqfT5UZYRr9laTC5NI1S+4153SjeDu8HsJZ9duomyNFuNOJAQ==" />
         </item>
     </channel>
 </rss>
