@@ -5,9 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="data:,">
 <title>Unstall: answer your agents from the MacBook notch</title>
+<link rel="canonical" href="https://unstall.dev/">
+<meta property="og:url" content="https://unstall.dev/">
+<script src="analytics-config.js" defer></script>
+<script src="analytics.js" type="module"></script>
 <meta name="description" content="Your agent is waiting. You're in another window. Unstall puts its question in your MacBook notch, so you answer there and everyone keeps working. Free for Mac.">
 <style>
-/* Unstall landing page. Static, no build step: see README.md. Colours are the app's status colours. */
+/* Unstall landing page. Static; analytics bundle preparation: see README.md. Colours are the app's status colours. */
 :root{
   --paper:#F3F0EA; --paper-2:#EAE5DC; --ink:#1C1A17; --ink-2:#4A4640; --ink-3:#6E6960;
   --rule:#D8D1C5; --stage:#141210; --stage-ink:#F0EEE9;
@@ -160,7 +164,7 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-primary btn-sm" href="https://github.com/jonkthomas/unstall-releases/releases/latest/download/Unstall.dmg" download data-download>Download for Mac</a>
+    <a class="btn btn-primary btn-sm" href="https://github.com/jonkthomas/unstall-releases/releases/latest/download/Unstall.dmg" download data-download="header">Download for Mac</a>
   </div>
 </header>
 
@@ -171,7 +175,7 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
       <h1>Your agent is waiting. <em>You’re in another window.</em></h1>
       <p class="lede">The question shows up in your MacBook notch. Answer it there and your agent gets back to work. You never leave the window you're in.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://github.com/jonkthomas/unstall-releases/releases/latest/download/Unstall.dmg" download data-download>
+        <a class="btn btn-primary" href="https://github.com/jonkthomas/unstall-releases/releases/latest/download/Unstall.dmg" download data-download="hero">
           <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.5a.75.75 0 0 1 .75.75v7.19l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 1 1 1.06-1.06l2.22 2.22V2.25A.75.75 0 0 1 8 1.5ZM2.75 13h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5Z"/></svg>
           Download for Mac</a>
         <a class="btn btn-ghost" href="#demo">Watch the 22-second demo</a>
@@ -304,7 +308,7 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
         </details>
         <details>
           <summary>Will I need to download every new version?</summary>
-          <p>No. Opt in to automatic update checks once, or use Check for Updates in the app. Sparkle handles the download and installation; you choose Install &amp; Relaunch or Later. You do not need to replace the app by hand for each release.</p>
+          <p>No. Unstall checks for updates automatically by default (you can turn that off in Settings), and you can use Check for Updates in the app at any time. Sparkle handles the download and installation; you choose Install &amp; Relaunch or Later. You do not need to replace the app by hand for each release.</p>
         </details>
         <details>
           <summary>How much does it cost?</summary>
@@ -326,14 +330,14 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
       <h2 id="close-h">Let your agents keep moving.</h2>
     </div>
     <div>
-      <a class="btn btn-primary" href="https://github.com/jonkthomas/unstall-releases/releases/latest/download/Unstall.dmg" download data-download>Download for Mac</a>
+      <a class="btn btn-primary" href="https://github.com/jonkthomas/unstall-releases/releases/latest/download/Unstall.dmg" download data-download="bottom">Download for Mac</a>
       <p class="fine"><span>Free</span><span>macOS 14+</span><span>Apple Silicon</span><span>herdr optional</span></p>
     </div>
   </div>
 </div>
 <footer>
   <div class="wrap">
-    <span><a href="legal/LICENSE.txt">License</a> · <a href="legal/NOTICE.txt">Notice</a></span>
+    <span><a href="privacy">Privacy</a> · <a href="terms">Terms</a> · <a href="legal/LICENSE.txt">License</a> · <a href="legal/NOTICE.txt">Notice</a></span>
     <span>Works with <a href="https://herdr.dev">herdr</a>.</span>
   </div>
 </footer>

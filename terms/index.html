@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Terms of Service · Unstall</title>
+<meta name="description" content="The terms for using the free Unstall Mac app and unstall.dev.">
+<style>
+/* Unstall legal page. Static, no build step, same tokens as the landing page (../index.html). */
+:root{
+  --paper:#F3F0EA; --paper-2:#EAE5DC; --ink:#1C1A17; --ink-2:#4A4640; --ink-3:#6E6960;
+  --rule:#D8D1C5; --stage:#141210; --stage-ink:#F0EEE9;
+  --coral:#FB8371; --coral-ink:#B4412F; --amber-ink:#8A6400;
+  --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  --wrap: min(760px, 100% - 2*clamp(20px, 5vw, 56px));
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--paper); color:var(--ink); font:400 17px/1.6 var(--sans); text-rendering:optimizeLegibility}
+a{color:inherit}
+.wrap{width:var(--wrap); margin-inline:auto}
+:focus-visible{outline:3px solid var(--coral-ink); outline-offset:3px; border-radius:6px}
+
+header.top .wrap{display:flex; align-items:center; gap:24px; padding:20px 0}
+.mark{display:flex; align-items:center; gap:10px; min-height:44px; font-weight:650; letter-spacing:-.01em; text-decoration:none}
+.mark i{width:26px; height:18px; background:var(--stage); border-radius:0 0 8px 8px; position:relative}
+.mark i::after{content:""; position:absolute; left:8px; right:8px; bottom:3px; height:2px; border-radius:2px; background:var(--coral)}
+nav.links{display:flex; gap:22px; margin-left:auto; font-size:15px; color:var(--ink-2)}
+nav.links a{display:inline-flex; align-items:center; min-height:44px; text-decoration:none}
+nav.links a:hover, nav.links a[aria-current]{color:var(--ink)}
+nav.links a[aria-current]{text-decoration:underline; text-underline-offset:4px}
+
+main{padding:clamp(20px,4vw,44px) 0 clamp(64px,10vw,110px)}
+.kicker{font-size:14px; font-weight:600; color:var(--ink-3); margin:0 0 10px}
+h1{font:500 clamp(36px,5.4vw,56px)/1.05 var(--serif); letter-spacing:-.02em; margin:0 0 14px}
+.updated{font-size:14px; color:var(--ink-3); margin:0}
+.summary{margin:28px 0 8px; padding:20px 22px; background:var(--paper-2); border-radius:14px; color:var(--ink-2)}
+.summary p{margin:0}
+.summary p+p{margin-top:12px}
+h2{font:500 clamp(24px,3vw,30px)/1.15 var(--serif); letter-spacing:-.015em; margin:48px 0 12px}
+h3{font:600 16px/1.3 var(--sans); margin:26px 0 6px}
+p, li{color:var(--ink-2); text-wrap:pretty}
+ul{padding-left:1.2em} li{margin:6px 0}
+.caps{font-size:14.5px; letter-spacing:.01em}
+code{font:14px/1.4 ui-monospace, "SF Mono", Menlo, monospace; background:var(--paper-2); padding:1px 5px; border-radius:5px; overflow-wrap:anywhere}
+
+.tbl{margin:18px 0 0; overflow-x:auto}
+table{width:100%; border-collapse:collapse; font-size:15px}
+th, td{text-align:left; vertical-align:top; padding:12px 12px 12px 0; border-bottom:1px solid var(--rule)}
+th{font-weight:600; color:var(--ink); border-bottom-color:var(--ink-3)}
+td{color:var(--ink-2)}
+.cols{display:grid; grid-template-columns:1fr 1fr; gap:0 28px}
+.cols h3{margin-top:18px}
+@media (max-width: 640px){ .cols{grid-template-columns:1fr} }
+
+footer{background:var(--stage); color:#8f897f; font-size:13.5px; border-top:1px solid #2b2824}
+footer .wrap{width:min(1120px, 100% - 2*clamp(20px, 5vw, 56px)); display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between; padding:22px 0 calc(22px + env(safe-area-inset-bottom))}
+footer a{color:#cfc8bd}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="../" aria-label="Unstall home"><i aria-hidden="true"></i>Unstall</a>
+    <nav class="links" aria-label="Legal">
+      <a href="../privacy">Privacy</a>
+      <a href="../terms" aria-current="page">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="kicker">Legal</p>
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated 2026-10-21</p>
+
+    <div class="summary">
+      <p><strong>The short version.</strong> Unstall is free and provided as it is, without a warranty. It shows you what
+      your coding agents ask and sends your answer back; it never approves anything on its own. The agents, and what they do
+      after you approve, are your responsibility. Our liability is limited as far as the law allows.</p>
+      <p><strong>Important — please read.</strong> These terms include a binding arbitration agreement and a class
+      action waiver in the <a href="#disputes">Arbitration and class waiver</a> section. By using Unstall you agree to
+      resolve disputes individually through binding arbitration, and you waive your right to a jury trial or to take
+      part in a class action.</p>
+    </div>
+
+    <h2 id="agreement">These terms</h2>
+    <p>These Terms of Service are an agreement between you and Voxtur Inc. (“Voxtur”, “we”, “us”) for the Unstall Mac
+    app, including its <code>notch-agent</code> launcher and hooks, and the unstall.dev website (together, “Unstall”).
+    By downloading, installing or using Unstall you agree to them. If you use Unstall for an organization, you agree on
+    its behalf and confirm you may do so. If you do not agree, do not use Unstall.</p>
+    <p>Our <a href="../privacy">Privacy Policy</a> explains what Unstall collects and what stays on your Mac.</p>
+
+    <h2 id="free">The app</h2>
+    <p>Unstall is free. We may change it, add or remove features, or stop offering it at any time. Updates are offered
+    through the app; installing one is always your choice.</p>
+
+    <h2 id="licence">Open-source licences</h2>
+    <p>Unstall includes open-source software. It is based on <a href="https://github.com/ykushch/notchagent">ykushch/notchagent</a>,
+    licensed under the Apache License 2.0; the licence and notice are at <a href="../legal/LICENSE.txt">License</a> and
+    <a href="../legal/NOTICE.txt">Notice</a> and are included in the app, along with the licence for Sparkle, the
+    update framework. Open-source licences govern the components they cover, and nothing in these terms limits the
+    rights they give you.</p>
+
+    <h2 id="agents">Your agents are your responsibility</h2>
+    <p>Unstall works with coding agents and tools made by other people, such as Claude Code, Codex, pi, Grok, Muse,
+    OpenCode and herdr. It is not affiliated with them, and their own terms apply to your use of them.</p>
+    <ul>
+      <li>Unstall shows you what an agent is asking and sends your answer to it. It approves a request only when you
+      answer, by clicking, with a keyboard shortcut, or by voice if you turn voice mode on. It never approves anything
+      on its own. A few requests the <code>notch-agent</code> launcher cannot show you, such as a Codex request for
+      extra permissions, are declined or cancelled, never granted.</li>
+      <li>You are responsible for reading what an agent asks before you approve it, and for what the agent does
+      afterwards, including commands it runs, files it changes and costs it incurs.</li>
+      <li>Voice recognition can mishear. Unstall reads risky commands and free-form replies back before sending them,
+      but you are responsible for the answers you give, by voice or otherwise.</li>
+      <li>Unstall may misread a screen or miss a question. Do not rely on it as your only way to supervise an agent.</li>
+    </ul>
+
+    <h2 id="use">Acceptable use</h2>
+    <p>Use Unstall lawfully and only on computers and accounts you are allowed to use. Do not:</p>
+    <ul>
+      <li>use it to connect to, or run agents on, machines you are not authorized to access;</li>
+      <li>use it to break the terms of the agents, models or services you connect it to;</li>
+      <li>interfere with, overload or misuse unstall.dev, the update feed or the download servers;</li>
+      <li>distribute a modified copy of Unstall as if it came from us, or remove its licence and attribution notices.</li>
+    </ul>
+
+    <h2 id="third-party">Third-party services</h2>
+    <p>Unstall relies on services we do not control: GitHub for downloads and updates, Hugging Face for voice models,
+    OpenRouter if you add your own key, PostHog for analytics, Vercel for hosting, and Apple’s macOS. Their terms and
+    availability are theirs. We are not responsible for them.</p>
+
+    <h2 id="feedback">Feedback</h2>
+    <p>If you send us feedback, through the in-app feedback score, by email or otherwise, we may use it to improve
+    Unstall without owing you anything for it.</p>
+
+    <h2 id="warranty">No warranty</h2>
+    <p class="caps">UNSTALL IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. WE DO NOT
+    WARRANT THAT UNSTALL WILL BE UNINTERRUPTED, ERROR-FREE OR SECURE, THAT IT WILL DETECT EVERY AGENT QUESTION, OR THAT
+    IT WILL DELIVER EVERY ANSWER CORRECTLY.</p>
+
+    <h2 id="liability">Limitation of liability</h2>
+    <p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, VOXTUR AND ITS DIRECTORS, OFFICERS, EMPLOYEES, CONTRACTORS AND
+    SUPPLIERS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR FOR LOST
+    PROFITS, REVENUE, DATA OR WORK, ARISING FROM YOUR USE OF OR INABILITY TO USE UNSTALL, INCLUDING ANYTHING AN AGENT
+    DOES AFTER AN ANSWER SENT THROUGH UNSTALL, EVEN IF WE WERE TOLD SUCH DAMAGES WERE POSSIBLE. OUR TOTAL LIABILITY FOR
+    ALL CLAIMS RELATING TO UNSTALL WILL NOT EXCEED THE AMOUNT YOU PAID US FOR UNSTALL IN THE TWELVE MONTHS BEFORE THE
+    CLAIM.</p>
+    <p>Some places do not allow these exclusions or limits. Where that is so, they apply only as far as the law
+    allows.</p>
+
+    <h2 id="ending">Ending</h2>
+    <p>You can stop using Unstall at any time by disconnecting your agents in Settings and deleting the app. If you
+    break these terms, your right to use Unstall ends. The sections on licences, responsibility for agents, feedback,
+    no warranty, limitation of liability, arbitration and governing law continue to apply after that.</p>
+
+    <h2 id="changes">Changes to these terms</h2>
+    <p>We may update these terms. When we do, we change the date at the top of this page. If you keep using Unstall
+    after a change, the new terms apply. If you do not agree with them, stop using Unstall.</p>
+
+    <h2 id="disputes">Arbitration and class waiver</h2>
+    <p>Any dispute arising out of or related to these terms or Unstall will be resolved by final and binding
+    arbitration administered by JAMS in Wilmington, Delaware, under the JAMS Comprehensive Arbitration Rules and
+    Procedures, before a single arbitrator. Judgment on the award may be entered in any court of competent
+    jurisdiction.</p>
+    <p><strong>Class action waiver.</strong> You and Voxtur each waive any right to bring or take part in a class,
+    collective or representative action. The arbitrator may not consolidate claims or preside over any form of
+    representative or class proceeding. If this waiver is held unenforceable, the entire arbitration agreement is
+    void.</p>
+    <p>Either of us may still seek injunctive or other equitable relief in a court of competent jurisdiction in
+    Wilmington, Delaware, for actual or threatened infringement of intellectual property.</p>
+
+    <h2 id="law">Governing law</h2>
+    <p>These terms are governed by the laws of the State of Delaware, without regard to its conflict of laws
+    principles.</p>
+    <p>If any part of these terms cannot be enforced, the rest still applies. Not enforcing a part of them is not a
+    waiver. These terms and the Privacy Policy are the whole agreement between you and us about Unstall.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Voxtur Inc.<br><a href="mailto:hello@unstall.dev">hello@unstall.dev</a></p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><a href="../privacy">Privacy</a> · <a href="../terms">Terms</a> · <a href="../legal/LICENSE.txt">License</a> · <a href="../legal/NOTICE.txt">Notice</a></span>
+    <span>Works with <a href="https://herdr.dev">herdr</a>.</span>
+  </div>
+</footer>
+
+</body>
+</html>

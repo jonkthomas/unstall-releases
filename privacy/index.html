@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Privacy Policy · Unstall</title>
+<meta name="description" content="What Unstall and unstall.dev collect, what stays on your Mac, and the choices you have.">
+<style>
+/* Unstall legal page. Static, no build step, same tokens as the landing page (../index.html). */
+:root{
+  --paper:#F3F0EA; --paper-2:#EAE5DC; --ink:#1C1A17; --ink-2:#4A4640; --ink-3:#6E6960;
+  --rule:#D8D1C5; --stage:#141210; --stage-ink:#F0EEE9;
+  --coral:#FB8371; --coral-ink:#B4412F; --amber-ink:#8A6400;
+  --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  --wrap: min(760px, 100% - 2*clamp(20px, 5vw, 56px));
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--paper); color:var(--ink); font:400 17px/1.6 var(--sans); text-rendering:optimizeLegibility}
+a{color:inherit}
+.wrap{width:var(--wrap); margin-inline:auto}
+:focus-visible{outline:3px solid var(--coral-ink); outline-offset:3px; border-radius:6px}
+
+header.top .wrap{display:flex; align-items:center; gap:24px; padding:20px 0}
+.mark{display:flex; align-items:center; gap:10px; min-height:44px; font-weight:650; letter-spacing:-.01em; text-decoration:none}
+.mark i{width:26px; height:18px; background:var(--stage); border-radius:0 0 8px 8px; position:relative}
+.mark i::after{content:""; position:absolute; left:8px; right:8px; bottom:3px; height:2px; border-radius:2px; background:var(--coral)}
+nav.links{display:flex; gap:22px; margin-left:auto; font-size:15px; color:var(--ink-2)}
+nav.links a{display:inline-flex; align-items:center; min-height:44px; text-decoration:none}
+nav.links a:hover, nav.links a[aria-current]{color:var(--ink)}
+nav.links a[aria-current]{text-decoration:underline; text-underline-offset:4px}
+
+main{padding:clamp(20px,4vw,44px) 0 clamp(64px,10vw,110px)}
+.kicker{font-size:14px; font-weight:600; color:var(--ink-3); margin:0 0 10px}
+h1{font:500 clamp(36px,5.4vw,56px)/1.05 var(--serif); letter-spacing:-.02em; margin:0 0 14px}
+.updated{font-size:14px; color:var(--ink-3); margin:0}
+.summary{margin:28px 0 8px; padding:20px 22px; background:var(--paper-2); border-radius:14px; color:var(--ink-2)}
+.summary p{margin:0}
+h2{font:500 clamp(24px,3vw,30px)/1.15 var(--serif); letter-spacing:-.015em; margin:48px 0 12px}
+h3{font:600 16px/1.3 var(--sans); margin:26px 0 6px}
+p, li{color:var(--ink-2); text-wrap:pretty}
+ul{padding-left:1.2em} li{margin:6px 0}
+code{font:14px/1.4 ui-monospace, "SF Mono", Menlo, monospace; background:var(--paper-2); padding:1px 5px; border-radius:5px; overflow-wrap:anywhere}
+
+.tbl{margin:18px 0 0; overflow-x:auto}
+table{width:100%; border-collapse:collapse; font-size:15px}
+th, td{text-align:left; vertical-align:top; padding:12px 12px 12px 0; border-bottom:1px solid var(--rule)}
+th{font-weight:600; color:var(--ink); border-bottom-color:var(--ink-3)}
+td{color:var(--ink-2)}
+.cols{display:grid; grid-template-columns:1fr 1fr; gap:0 28px}
+.cols h3{margin-top:18px}
+@media (max-width: 640px){ .cols{grid-template-columns:1fr} }
+
+footer{background:var(--stage); color:#8f897f; font-size:13.5px; border-top:1px solid #2b2824}
+footer .wrap{width:min(1120px, 100% - 2*clamp(20px, 5vw, 56px)); display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between; padding:22px 0 calc(22px + env(safe-area-inset-bottom))}
+footer a{color:#cfc8bd}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="../" aria-label="Unstall home"><i aria-hidden="true"></i>Unstall</a>
+    <nav class="links" aria-label="Legal">
+      <a href="../privacy" aria-current="page">Privacy</a>
+      <a href="../terms">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="kicker">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated 2026-10-21</p>
+
+    <div class="summary">
+      <p><strong>The short version.</strong> Unstall is a free Mac app. It runs on your Mac. Your agent sessions, their
+      commands and prompts, and your voice audio are not sent to us. The answers you give go to your own agents, over
+      SSH if they run on another machine you added, and if you add your own OpenRouter key, the text of a card goes to
+      OpenRouter to write its spoken summary. The app sends a few anonymous usage events
+      (on by default, one switch in Settings turns them off), checks for updates, and downloads voice models only if you
+      turn voice on. You can give us an email address or a feedback score if you want to; you never have to. We do not
+      sell data.</p>
+    </div>
+
+    <h2 id="who">Who we are</h2>
+    <p>Unstall and unstall.dev are operated by Voxtur Inc. (“Voxtur”, “we”, “us”). This policy covers the Unstall Mac
+    app, including the <code>notch-agent</code> launcher and the hooks it installs when you connect an agent, and the
+    unstall.dev website. Contact: <a href="mailto:hello@unstall.dev">hello@unstall.dev</a>.</p>
+
+    <h2 id="table">What we collect, and what we never collect</h2>
+    <div class="cols">
+      <div>
+        <h3>What we collect</h3>
+        <ul>
+          <li>A random install id created on your Mac and saved in Unstall’s preferences</li>
+          <li>When the app starts: its version, build and macOS version</li>
+          <li>When an agent connects: its kind (Claude, Codex, Grok, Muse, OpenCode or pi)</li>
+          <li>When an answer you gave to an approval goes through: the agent kind, your decision (allow, always allow or
+          deny), and whether you clicked or spoke</li>
+          <li>When you turn voice mode on or off</li>
+          <li>That you skipped the email ask</li>
+          <li>Your email address, only if you enter it and press Send</li>
+          <li>A 0–10 feedback score and an optional one-line reason (up to 280 characters), only if you press Send</li>
+          <li>On unstall.dev: a page view when you open the home page, and which Download button you click</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What we never collect</h3>
+        <ul>
+          <li>Commands, file paths or prompts</li>
+          <li>What your agents print or ask</li>
+          <li>Session, project or host names</li>
+          <li>Voice transcripts or audio</li>
+          <li>Your SSH keys, API keys or agent settings</li>
+          <li>Cookies on unstall.dev</li>
+        </ul>
+      </div>
+    </div>
+    <p>That is the complete list. Routine app events carry only the install id and the values above, each from a
+    fixed set. Unstall does not read commands, prompts, paths, session or host names, or transcripts for them.</p>
+
+    <h2 id="local">What stays on your Mac</h2>
+    <p>Unstall reads what your agents are doing so it can show their questions in the notch. It gets this from
+    <a href="https://herdr.dev">herdr</a> (through herdr’s local socket), from the launcher and hooks you connect, and
+    from the visible text of the terminal pane where an agent is waiting. All of that is processed on your Mac and is
+    not sent to us.</p>
+    <p>Unstall stores its own files on your Mac: its settings in macOS preferences, records and backups for the agents
+    you connect in <code>~/Library/Application Support/Unstall</code>, status files in
+    <code>~/Library/Application Support/NotchAgent</code>, and, for pi, question files in
+    <code>~/.pi/agent/notch/asks</code>. When you choose Connect for an agent, Unstall adds marked hook entries to that
+    agent’s settings (for example <code>~/.claude/settings.json</code> or <code>~/.codex/hooks.json</code>) and keeps a
+    backup. Disconnect removes them.</p>
+
+    <h2 id="voice">Voice mode</h2>
+    <p>Voice mode is off by default. When you turn it on in Settings, Unstall:</p>
+    <ul>
+      <li>Downloads its speech models (Kokoro for speech, Parakeet for recognition, Silero for detecting when you stop
+      talking) from Hugging Face (huggingface.co), at fixed versions. Hugging Face receives these download requests,
+      including your IP address, like any download.</li>
+      <li>Speaks and listens on your Mac. Microphone audio is never saved to disk or sent anywhere. What you say is
+      turned into text on your Mac and used to pick your answer; transcripts are not sent to us. If you dictate a
+      free-form reply and confirm it, that text is sent to your agent as your answer, just as if you had typed it. For
+      Claude sessions started with the <code>notch-agent</code> launcher, the answer is also written to a private file
+      in that session’s run folder so Claude can read it.</li>
+      <li>Unless you add an OpenRouter key (below), writes the sentence it speaks on your Mac, with Apple’s on-device
+      model where available or a fixed template otherwise.</li>
+    </ul>
+    <p><strong>Optional OpenRouter summaries.</strong> If you paste your own OpenRouter API key into Settings → Voice,
+    Unstall sends the one command, permission title or question from the card (at most 400 characters, with obvious
+    secrets removed) to OpenRouter to write the spoken sentence. Unstall does not add the agent or project name, but
+    the command or question itself may contain names and file paths, and those are sent as they are. Cards that mention
+    credentials, and commands on Unstall’s fixed risky list, are never sent. Your key is kept in the macOS Keychain. This
+    is the only way card text leaves your Mac, it happens only with your key, and OpenRouter’s own terms and privacy
+    policy apply to it. Remove the key to stop it.</p>
+
+    <h2 id="permissions">macOS permissions</h2>
+    <div class="tbl">
+      <table>
+        <thead><tr><th scope="col">Permission</th><th scope="col">When and why</th></tr></thead>
+        <tbody>
+          <tr><td>Microphone</td><td>Only with voice mode on, to hear your short spoken answer right after Unstall reads
+          an agent’s question aloud. Audio stays on your Mac.</td></tr>
+          <tr><td>Audio capture</td><td>Only with voice mode on, to lower other apps’ sound briefly while Unstall speaks
+          and listens, then put it back. Nothing is recorded.</td></tr>
+          <tr><td>Automation (Apple Events)</td><td>To ask your terminal (Terminal, iTerm2 or Ghostty) to bring forward
+          the tab where an agent runs when you click it. System Events is used only if you turn on the screen-saver
+          extra, to start your screen saver.</td></tr>
+          <tr><td>Local network</td><td>When you choose Find machines, to look for computers on your network that offer
+          SSH, and to connect to local machines you add.</td></tr>
+          <tr><td>Notifications</td><td>Banners, only if you allow them.</td></tr>
+          <tr><td>Never asked</td><td>Accessibility, Input Monitoring, Screen Recording, Full Disk Access.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="network">Network connections the app makes</h2>
+    <h3>Remote machines over SSH</h3>
+    <p>Unstall connects only to hosts you add, using your own <code>ssh</code> setup and keys. It never asks for a
+    password. It forwards herdr’s socket on that machine to your Mac to read agent state. The connection runs directly
+    between your Mac and your machine and does not pass through us.</p>
+    <h3>Updates</h3>
+    <p>Unstall uses Sparkle to check for updates. It checks automatically by default; you can turn automatic checks off
+    in Settings or use Check for Updates in the menu instead. Checks read our update feed on GitHub Pages
+    (<code>jonkthomas.github.io/unstall-releases</code>), and updates download from GitHub releases. GitHub receives
+    these requests, including your IP address and the app version, like any web request. Unstall does not send a system
+    profile with update checks. Updates are signed, and Unstall checks the signature before installing. By default it
+    does not install updates on its own: you choose Install &amp; Relaunch. Sparkle’s update window also offers to
+    install future updates automatically, and that happens only if you turn it on there.</p>
+    <h3>Usage analytics</h3>
+    <p>The app events in the list above are sent to PostHog (US cloud), which processes them for us. They are tied to
+    the random install id, not to your name, Apple ID or hardware. Usage stats are on by default, and Unstall shows a
+    notice about them in its panel. Turning off <strong>Share anonymous usage stats</strong> in Settings stops routine
+    sending immediately and cancels any request still waiting to go; events already sent cannot be recalled. PostHog
+    receives your IP address as part of each request, as any web service does. Unstall tells PostHog not to look up a
+    location from it, so events are not tagged with a location.</p>
+
+    <h2 id="asks">Email and feedback, if you choose</h2>
+    <ul>
+      <li><strong>Email.</strong> On the third day you use Unstall, or from Settings → Get updates by email, Unstall
+      may ask for your email address so we can send you news about Unstall. If you enter it and press Send, it is stored
+      in PostHog with your install id. That links the email to this install’s usage events and feedback, including those
+      sent before, so they are no longer anonymous. If you skip while usage stats are on, the only thing sent is that you
+      skipped.</li>
+      <li><strong>Feedback score.</strong> On the seventh day you use Unstall, or from Settings → Give feedback, Unstall
+      may ask how likely you are to recommend it (0–10), with an optional one-line reason of up to 280 characters. They
+      are sent to PostHog with your install id only when you press Send. The ask comes back at most once every 90 days.
+      Please do not put confidential information in the reason.</li>
+      <li>Only one ask is shown at a time, never while an agent is waiting for you, and each can be skipped. With usage
+      stats off, the asks are still offered. Pressing Send is your consent, so an email or feedback answer you send goes
+      to PostHog even while usage stats are off; nothing else does.</li>
+    </ul>
+
+    <h2 id="site">unstall.dev</h2>
+    <p>The site uses PostHog with nothing stored in your browser: no cookies and no local storage, so each visit
+    counts as a new visitor. It records a page view when you open the home page, and which Download button you click
+    (header, hero or bottom). Each carries the page address without its query, the referring site (its origin only,
+    never the full address) and any campaign (UTM) tags in the link. There is no session replay and no automatic
+    capture of clicks. PostHog receives your IP address as part of each request; the site tells it not to look up a
+    location. We never connect site visits to app installs. The site is hosted by Vercel, which processes requests,
+    including your IP address, to serve it. The Download button takes you to GitHub, where GitHub’s policies
+    apply.</p>
+
+    <h2 id="use">How we use information</h2>
+    <ul>
+      <li>To see which versions are in use, which agents people connect, and whether approvals and voice work, so we
+      can fix and improve Unstall.</li>
+      <li>To send news about Unstall to an email address you gave us. Every email will let you stop receiving them.</li>
+      <li>To read feedback and decide what to build next.</li>
+    </ul>
+
+    <h2 id="share">Who we share it with</h2>
+    <p>We do not sell personal information and do not share it for advertising. Service providers process it for us:</p>
+    <ul>
+      <li>PostHog: app and site analytics, email and feedback answers (United States).</li>
+      <li>Vercel: hosting for unstall.dev.</li>
+      <li>GitHub: the update feed and app downloads.</li>
+      <li>Hugging Face: voice model downloads, only if you turn voice on.</li>
+      <li>OpenRouter: only if you add your own key, under your own account with them.</li>
+    </ul>
+    <p>We may also disclose information if the law requires it, to protect people’s safety or our rights, or as part
+    of a merger, acquisition or sale of assets, in which case this policy continues to apply to it.</p>
+
+    <h2 id="transfers">Where it is processed</h2>
+    <p>PostHog stores our analytics in its US cloud. If you are outside the United States, the events above are
+    transferred to and processed there.</p>
+
+    <h2 id="retention">How long we keep it</h2>
+    <p>We keep usage events only as long as they help us improve Unstall. We keep an email address until you ask us to
+    delete it or stop receiving emails, and delete it on request.</p>
+
+    <h2 id="choices">Your choices and rights</h2>
+    <ul>
+      <li>Turn off Share anonymous usage stats in Settings at any time.</li>
+      <li>Skip the email and feedback asks, or never open them.</li>
+      <li>Leave voice mode off, or remove your OpenRouter key.</li>
+      <li>Turn automatic update checks off in Settings.</li>
+      <li>To remove Unstall completely: remove your OpenRouter key in Settings → Voice if you added one (it is kept in
+      your Keychain), disconnect your agents in Settings, quit and delete the app, then delete
+      <code>~/Library/Application Support/Unstall</code>, <code>~/Library/Application Support/NotchAgent</code> and, if
+      you installed the screen saver, <code>~/Library/Screen Savers/NotchAgent.saver</code>. Its settings, including
+      the remote hosts you added, stay in macOS preferences until you run
+      <code>defaults delete co.schoolintel.notch-pi</code> in Terminal.</li>
+    </ul>
+    <p>Depending on where you live, you may have the right to access, correct or delete personal information we hold,
+    or to object to how we use it. To ask, email <a href="mailto:hello@unstall.dev">hello@unstall.dev</a>. If you
+    gave us an email address, write from it so we can find your record. You can also complain to your local data
+    protection authority.</p>
+
+    <h2 id="security">Security</h2>
+    <p>The app’s connections to PostHog, GitHub, Hugging Face and OpenRouter use HTTPS. Updates are signed and checked
+    before they install. No system is perfectly secure, and we cannot guarantee absolute security.</p>
+
+    <h2 id="children">Children</h2>
+    <p>Unstall is a tool for software developers. It is not directed to children, and we do not knowingly collect
+    personal information from children under 16.</p>
+
+    <h2 id="changes">Changes to this policy</h2>
+    <p>When we change this policy we update the date at the top of this page. If a change affects what the app sends,
+    we update this page before that version ships.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Voxtur Inc.<br><a href="mailto:hello@unstall.dev">hello@unstall.dev</a></p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><a href="../privacy">Privacy</a> · <a href="../terms">Terms</a> · <a href="../legal/LICENSE.txt">License</a> · <a href="../legal/NOTICE.txt">Notice</a></span>
+    <span>Works with <a href="https://herdr.dev">herdr</a>.</span>
+  </div>
+</footer>
+
+</body>
+</html>
