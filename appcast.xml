@@ -3,6 +3,21 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.8.5</title>
+            <pubDate>Wed, 21 Oct 2026 17:58:16 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261021215537</sparkle:version>
+            <sparkle:shortVersionString>0.8.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Unstall 0.8.5 turns on the anonymous usage stats announced in 0.8.4. Usage stats, plus any email address or feedback you choose to send, now go to PostHog.
+
+- Turn off anonymous usage stats in Settings → Privacy → Share anonymous usage stats.
+- The optional email and feedback cards can now send your submissions. Sending is your choice; you can skip either card.
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.5/Unstall.zip" length="16051005" type="application/octet-stream" sparkle:edSignature="Sv5hr4Aav+nWz0pqjW+m4AZm7ohvIcneW8awGwNRifj4y6H3VDgcv7tn3LJXRT69kCb8fkeclvwL1+fima6rAA==" />
+        </item>
+    <item>
             <title>0.8.4</title>
             <pubDate>Wed, 21 Oct 2026 15:24:45 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
