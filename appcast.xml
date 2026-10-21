@@ -3,6 +3,25 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.8.4</title>
+            <pubDate>Wed, 21 Oct 2026 15:24:45 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261021192208</sparkle:version>
+            <sparkle:shortVersionString>0.8.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Unstall 0.8.4 lets you answer more agent prompts from the notch and makes ordinary voice replies a single turn. Voice remains off by default.
+
+- Answer pi and Claude yes/no prompts from the notch. Production merges need a second click and can never be approved by voice.
+- With voice enabled, ordinary approvals, choices and dictated replies go through without a separate “Send?” step. Risky actions still ask for confirmation.
+- Anonymous usage stats are on by default, with a notice on first launch after updating and a Settings toggle. This build has no analytics key, so it sends no usage stats, email addresses or feedback.
+- Optional email and feedback cards appear after three and seven active days, once the notice is dismissed and no agent card is waiting. In this build, Send is disabled and the cards explain that sending is unavailable; you can skip them.
+- Read the Privacy Policy and Terms of Service at unstall.dev.
+- Keeps the Muse approval and herdr connection crash fix shipped in 0.8.3.
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.4/Unstall.zip" length="16051202" type="application/octet-stream" sparkle:edSignature="wfHOdRpvwQGC4MtvMnJLRBs1GDUgLv06G7p8dxT9bD4OX5SqwHRbJBOeh5ZYDUydMhn7gaWJhB8c+HlCs41WAw==" />
+        </item>
+    <item>
             <title>0.8.3</title>
             <pubDate>Tue, 20 Oct 2026 18:45:16 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
