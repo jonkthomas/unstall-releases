@@ -3,6 +3,24 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.8.6</title>
+            <pubDate>Thu, 22 Oct 2026 11:43:26 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261022154218</sparkle:version>
+            <sparkle:shortVersionString>0.8.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Unstall 0.8.6 makes voice-reply status and recovery feedback clearer.
+
+- The header says Preparing until the microphone is open. Listening and the notch glow now appear only while the microphone accepts speech.
+- Unclear replies no longer wait for an extra interpretation step that could not send an answer.
+- Missed or clipped replies, microphone capture failures, and replies that could not be sent now get spoken recovery feedback instead of silently doing nothing.
+
+Ordinary replies still send in one turn; high-risk actions still require confirmation, and production actions still need manual approval. The gap after the getting-ready chime has not been removed.
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.6/Unstall.zip" length="16065258" type="application/octet-stream" sparkle:edSignature="9pIk2/9xVuwGFJFrkNhXFAsXXs7YKwhawXQKvOvOBh+y/Sj1vQ4Z99e9e75klyzcqWFMj+gsOqe9kOtkkoeKBA==" />
+        </item>
+    <item>
             <title>0.8.5</title>
             <pubDate>Wed, 21 Oct 2026 17:58:16 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
