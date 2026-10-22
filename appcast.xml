@@ -3,6 +3,22 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.8.7</title>
+            <pubDate>Thu, 22 Oct 2026 14:03:27 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261022180058</sparkle:version>
+            <sparkle:shortVersionString>0.8.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Unstall 0.8.7 makes saved remote computers easier to update.
+
+- Use Edit to change a saved computer's SSH destination without deleting and re-adding it.
+- Add and Edit now explain how to use user@host with your remote computer's login name.
+- Editing keeps your session filter, and leaving out a username still uses your existing SSH configuration defaults.
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.7/Unstall.zip" length="16071307" type="application/octet-stream" sparkle:edSignature="HmalwfSYwXrZhJS8O1zs2D5d2Ojye/XC3Oz2sRn+0YToWxmGlzkaHnjFkKfqIShC4TxmMIVNOfazpCWiiyJwBw==" />
+        </item>
+    <item>
             <title>0.8.6</title>
             <pubDate>Thu, 22 Oct 2026 11:43:26 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
