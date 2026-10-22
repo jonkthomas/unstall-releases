@@ -3,6 +3,22 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.8.8</title>
+            <pubDate>Thu, 22 Oct 2026 18:36:03 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261022223316</sparkle:version>
+            <sparkle:shortVersionString>0.8.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Unstall 0.8.8 improves remote computer discovery and answering pi questions.
+
+- Find Tailscale computers when Unstall is opened from Finder, with clearer help when discovery needs attention.
+- Click anywhere on the Find a computer row to open or close discovery.
+- Answer pi questions that allow multiple choices with checkboxes, then send your selections with Submit.
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.8/Unstall.zip" length="16106505" type="application/octet-stream" sparkle:edSignature="I8TcIfaNeteH7CyzkDXspUFRSKgdzcSTugapwDqPgXIw1FLIuB2hL4v308aNXzcK3OPyFX5x9kQDKdiLbXbpCA==" />
+        </item>
+    <item>
             <title>0.8.7</title>
             <pubDate>Thu, 22 Oct 2026 14:03:27 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
