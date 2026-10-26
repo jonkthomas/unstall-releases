@@ -93,8 +93,8 @@ h2{font:500 clamp(30px,4.4vw,48px)/1.08 var(--serif); letter-spacing:-.02em; mar
 .tile.wide .media{order:0; flex:1; min-width:0; border-left:1px solid var(--rule)}
 .tile video{width:100%; aspect-ratio:16/10; object-fit:contain; background:var(--stage)}
 .tile .kicker{margin-bottom:8px}
-.tile h3{font:500 clamp(24px,2.6vw,30px)/1.12 var(--serif); letter-spacing:-.015em; margin:0 0 10px}
-.tile h3 + p{color:var(--ink-2); margin:0; max-width:30rem; text-wrap:pretty}
+.tile h3, .note h3{font:500 clamp(24px,2.6vw,30px)/1.12 var(--serif); letter-spacing:-.015em; margin:0 0 10px}
+.tile h3 + p, .note h3 + p{color:var(--ink-2); margin:0; max-width:30rem; text-wrap:pretty}
 .tile .meta{display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:16px}
 .tag{font-size:12.5px; font-weight:600; color:var(--ink-3); border:1px solid var(--rule); border-radius:999px; padding:2px 10px}
 /* the control sits beside the label, never over the clip: every corner of a clip carries content */
@@ -102,6 +102,11 @@ h2{font:500 clamp(30px,4.4vw,48px)/1.08 var(--serif); letter-spacing:-.02em; mar
 .pp:hover{background:var(--paper-2)}
 .pp svg{width:11px; height:11px}
 .pp[data-state="playing"] .i-play, .pp:not([data-state="playing"]) .i-pause{display:none}
+/* text tiles under the clips: same paper card, no media */
+.more{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-top:16px}
+.note{margin:0; border:1px solid var(--rule); border-radius:var(--r); background:#F7F4EF; padding:22px 24px 24px}
+.note .kicker{margin-bottom:8px}
+.note h3{font-size:clamp(22px,2.2vw,26px)}
 
 /* requirements + faq */
 .reqfaq{display:grid; grid-template-columns:minmax(0,4fr) minmax(0,7fr); gap:clamp(28px,6vw,80px)}
@@ -135,7 +140,7 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
   .ba{grid-template-columns:1fr}
   .ba > div{padding-right:0}
   .ba > div + div{padding-left:0; border-left:0; border-top:1px solid var(--rule)}
-  .bento{grid-template-columns:1fr}
+  .bento, .more{grid-template-columns:1fr}
   .tile.wide{flex-direction:column}
   .tile.wide .media{order:-1; border-left:0}
   .tile.wide .txt{align-self:auto; padding:22px 24px 24px}
@@ -222,7 +227,7 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
   <section id="features" aria-labelledby="feat-h">
     <div class="wrap">
       <p class="kicker">What else it does</p>
-      <h2 id="feat-h">Three more ways to keep agents moving.</h2>
+      <h2 id="feat-h">More ways to keep agents moving.</h2>
       <div class="bento">
         <article class="tile wide" aria-labelledby="f1">
           <div class="txt">
@@ -258,19 +263,36 @@ footer .wrap{display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-b
         </article>
         <article class="tile" aria-labelledby="f3">
           <div class="txt">
-            <p class="kicker">Choose, then act</p>
-            <h3 id="f3">Tick several. Send once.</h3>
-            <p>When a pi agent asks you to pick more than one, tick them in the notch. Nothing is sent until you press Submit.</p>
+            <p class="kicker">Desktop apps</p>
+            <h3 id="f3">Desktop sessions too.</h3>
+            <p>Connect Claude and Codex once, and sessions in their desktop apps show up beside your terminal agents. Click one that’s waiting: Codex opens the exact thread, Claude opens the app. You answer there.</p>
             <div class="meta">
-              <button class="pp" type="button" aria-label="Play the Choose, then act demo"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4 2.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/></svg><span class="pp-t">Play</span></button>
+              <button class="pp" type="button" aria-label="Play the Desktop apps demo"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4 2.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/></svg><span class="pp-t">Play</span></button>
               <span class="tag">Illustrative demo</span>
             </div>
           </div>
           <div class="media">
-            <video data-feature="choose-then-act" data-title="Choose, then act" data-src="assets/features/choose-then-act.mp4"
-                   poster="assets/features/choose-then-act.jpg" muted playsinline loop preload="none"
-                   aria-label="Short silent illustrative demo. A pi agent asks what to work on next, two are ticked while nothing is sent, Submit is pressed, and the receipt shows Run the tests and Update the docs were sent."></video>
+            <video data-feature="desktop-apps" data-title="Desktop apps" data-src="assets/features/desktop-apps.mp4"
+                   poster="assets/features/desktop-apps.jpg" muted playsinline loop preload="none"
+                   aria-label="Short silent illustrative demo. Claude and Codex desktop sessions are listed in the notch, the Codex one changes to Waiting in app, a click opens its thread, the command is approved in the app, and Codex is working again."></video>
           </div>
+        </article>
+      </div>
+      <div class="more">
+        <article class="note" aria-labelledby="n1">
+          <p class="kicker">Many agents</p>
+          <h3 id="n1">One list for every agent.</h3>
+          <p>Through herdr, Unstall follows 15+ coding agents in one list, each with its status, prompt and elapsed time. Tested with Claude Code, Codex, pi, Grok, OpenCode and Muse.</p>
+        </article>
+        <article class="note" aria-labelledby="n2">
+          <p class="kicker">Safe approvals</p>
+          <h3 id="n2">Nothing is answered for you.</h3>
+          <p>Supported approvals become plain Allow and Deny buttons, and anything unclear stays in the terminal. Certain high-impact approvals ask you to type the target first, and risky spoken answers are read back. When pi asks you to pick several, tick them. Nothing is sent until you press Submit.</p>
+        </article>
+        <article class="note" aria-labelledby="n3">
+          <p class="kicker">Jump back · Screen saver</p>
+          <h3 id="n3">Jump back, or step away.</h3>
+          <p>Use Jump beside an agent, or on its macOS notification, to open its exact terminal pane. A standard macOS screen saver keeps agent status in view as your display locks, in Classic, Aurora Observatory or Current Wallpaper style. It shows no prompts or output.</p>
         </article>
       </div>
     </div>
