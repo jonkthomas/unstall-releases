@@ -3,6 +3,22 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.8.10</title>
+            <pubDate>Mon, 26 Oct 2026 13:32:15 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261026172942</sparkle:version>
+            <sparkle:shortVersionString>0.8.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Unstall 0.8.10 connects to saved herdr machines through herdr and keeps remote worker questions with their orchestrators.
+
+- Other Macs saved and enabled in herdr now connect through herdr itself for agent status, screen reads and actions.
+- Remote worker agents no longer ask you directly in Unstall; orchestrator questions and escalations still reach you. New workers need the updated pi harness for this distinction.
+- Jump on another Mac's agent focuses its pane and brings herdr forward. If that machine is not showing, pick it in herdr's sidebar; Unstall shows a reminder when it cannot confirm the displayed machine.
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.10/Unstall.zip" length="16195793" type="application/octet-stream" sparkle:edSignature="otwKdHiUBHZOVmvismwxicPcU+7xT736MC+dBpdhPeSYuYa2Du5l40Iag+RO7G3i2O6+ZeLGJvJsl0mFruUrAw==" />
+        </item>
+    <item>
             <title>0.8.9</title>
             <pubDate>Sun, 25 Oct 2026 21:03:59 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
