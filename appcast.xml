@@ -3,6 +3,22 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.9.0</title>
+            <pubDate>Tue, 27 Oct 2026 17:07:32 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261027210424</sparkle:version>
+            <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Unstall 0.9.0 adds Mac support for an iPhone companion app. The iPhone app is in private testing and not yet publicly available.
+
+- Pair your iPhone by QR code in Settings → Connections → “Pair new iPhone…”. Both devices need Tailscale. Answer agent questions or approve and deny permissions from your phone, including typed answers and denial notes where supported.
+- For notifications while the iPhone app is closed, import your Apple push (APNs) key in Settings → Connections → Push key → “Choose .p8 file…”. Use the AuthKey_XXXXXXXXXX.p8 file; Unstall stores the key in this Mac’s Keychain. Without a push key, items are available while the iPhone app is open.
+- The Mac listener runs during pairing and while at least one iPhone is paired. Revoke a phone in Settings to remove its access; revoking the last phone stops the listener.
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.0/Unstall.zip" length="18656710" type="application/octet-stream" sparkle:edSignature="rnhrR6RkamXdzzkH09Jr+EDRZtkcp+7M5cfnrCzI1gDSnUFIM+y7+jnnMV/D0esHzQAYQzXTaQ/tFkWD0F0TCA==" />
+        </item>
+    <item>
             <title>0.8.10</title>
             <pubDate>Mon, 26 Oct 2026 13:32:15 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
