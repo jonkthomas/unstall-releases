@@ -3,6 +3,18 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.9.2</title>
+            <pubDate>Tue, 27 Oct 2026 22:49:37 -0400</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261028024822</sparkle:version>
+            <sparkle:shortVersionString>0.9.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">Permission requests from Mac agents can now be approved or denied from the iPhone. The iPhone app is in private testing and not yet publicly available.
+</description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.2/Unstall.zip" length="18656902" type="application/octet-stream" sparkle:edSignature="S45BGBIO/gAyXyr3pmDwU6CNiDZiwW2tXD5zBqjjbRBxZq8TipUvBdkSBG6HMjCAAqssFxcCzxQX8iu+TYGQBQ==" />
+        </item>
+    <item>
             <title>0.9.1</title>
             <pubDate>Tue, 27 Oct 2026 18:24:06 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
