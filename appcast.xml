@@ -1,206 +1,22 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Unstall</title>
         <item>
-            <title>0.9.3</title>
-            <pubDate>Wed, 28 Oct 2026 09:54:59 -0400</pubDate>
+            <title>0.10.0</title>
+            <pubDate>Thu, 29 Oct 2026 00:23:47 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261028135145</sparkle:version>
-            <sparkle:shortVersionString>0.9.3</sparkle:shortVersionString>
+            <sparkle:version>20261029042052</sparkle:version>
+            <sparkle:shortVersionString>0.10.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Approval prompts from machines added with `herdr machine` (e.g. pi's production-approve picker) now appear in the notch and on the paired iPhone, and can be approved or denied from either.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.3/Unstall.zip" length="18663967" type="application/octet-stream" sparkle:edSignature="KRmoFW2M95lP2gO+a+cNy5y03idZZU7F0YsOJ8KfkCHMOmv6PjD9HcwMgTCQMzByamczy6ZQ24nZWcV6Y+0gCA==" />
-        </item>
-    <item>
-            <title>0.9.2</title>
-            <pubDate>Tue, 27 Oct 2026 22:49:37 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261028024822</sparkle:version>
-            <sparkle:shortVersionString>0.9.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Permission requests from Mac agents can now be approved or denied from the iPhone. The iPhone app is in private testing and not yet publicly available.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.2/Unstall.zip" length="18656902" type="application/octet-stream" sparkle:edSignature="S45BGBIO/gAyXyr3pmDwU6CNiDZiwW2tXD5zBqjjbRBxZq8TipUvBdkSBG6HMjCAAqssFxcCzxQX8iu+TYGQBQ==" />
-        </item>
-    <item>
-            <title>0.9.1</title>
-            <pubDate>Tue, 27 Oct 2026 18:24:06 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261027222101</sparkle:version>
-            <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">iPhone pairing now works when Tailscale is connected. The iPhone app is in private testing and not yet publicly available.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.1/Unstall.zip" length="18656985" type="application/octet-stream" sparkle:edSignature="onmswFZK1wT8UzYOmOif5HxKbRAWZJqydKOxr2jifkb/O1kqeiIt44Y76GNHmdW5rgSnEtGdlY0M9Tnu3HcfBQ==" />
-        </item>
-    <item>
-            <title>0.9.0</title>
-            <pubDate>Tue, 27 Oct 2026 17:07:32 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261027210424</sparkle:version>
-            <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.9.0 adds Mac support for an iPhone companion app. The iPhone app is in private testing and not yet publicly available.
+            <description sparkle:format="plain-text"><![CDATA[Paired iPhones can receive agent alerts through Unstall's relay at unstall.dev, without adding an Apple push key on each Mac. Pushes contain only random IDs; agent text and your answers travel directly between your iPhone and Mac over Tailscale.
 
-- Pair your iPhone by QR code in Settings → Connections → “Pair new iPhone…”. Both devices need Tailscale. Answer agent questions or approve and deny permissions from your phone, including typed answers and denial notes where supported.
-- For notifications while the iPhone app is closed, import your Apple push (APNs) key in Settings → Connections → Push key → “Choose .p8 file…”. Use the AuthKey_XXXXXXXXXX.p8 file; Unstall stores the key in this Mac’s Keychain. Without a push key, items are available while the iPhone app is open.
-- The Mac listener runs during pairing and while at least one iPhone is paired. Revoke a phone in Settings to remove its access; revoking the last phone stops the listener.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.0/Unstall.zip" length="18656710" type="application/octet-stream" sparkle:edSignature="rnhrR6RkamXdzzkH09Jr+EDRZtkcp+7M5cfnrCzI1gDSnUFIM+y7+jnnMV/D0esHzQAYQzXTaQ/tFkWD0F0TCA==" />
-        </item>
-    <item>
-            <title>0.8.10</title>
-            <pubDate>Mon, 26 Oct 2026 13:32:15 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261026172942</sparkle:version>
-            <sparkle:shortVersionString>0.8.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.8.10 connects to saved herdr machines through herdr and keeps remote worker questions with their orchestrators.
+The iPhone app adds a setup checklist and renews its push authorization automatically. Existing pairings keep working. Each Mac keeps its old push key until the relay has accepted a push for every paired iPhone.
 
-- Other Macs saved and enabled in herdr now connect through herdr itself for agent status, screen reads and actions.
-- Remote worker agents no longer ask you directly in Unstall; orchestrator questions and escalations still reach you. New workers need the updated pi harness for this distinction.
-- Jump on another Mac's agent focuses its pane and brings herdr forward. If that machine is not showing, pick it in herdr's sidebar; Unstall shows a reminder when it cannot confirm the displayed machine.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.10/Unstall.zip" length="16195793" type="application/octet-stream" sparkle:edSignature="otwKdHiUBHZOVmvismwxicPcU+7xT736MC+dBpdhPeSYuYa2Du5l40Iag+RO7G3i2O6+ZeLGJvJsl0mFruUrAw==" />
-        </item>
-    <item>
-            <title>0.8.9</title>
-            <pubDate>Sun, 25 Oct 2026 21:03:59 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261026010115</sparkle:version>
-            <sparkle:shortVersionString>0.8.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.8.9 follows your saved herdr machines and keeps unsent drafts.
-
-- Machines enabled in herdr's saved-machine list now appear alongside the computers you add in Unstall, and their approval cards show up with the others. A slow machine no longer holds up refreshes for the rest.
-- Remote connections use SSH sockets private to your macOS user account. Other programs running as your user can still reach them.
-- Unsent replies and new-message drafts are kept while Unstall stays open and restored when the same session reconnects. Recovered approval replies need to be re-attached before sending; drafts are never sent automatically.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.9/Unstall.zip" length="16145923" type="application/octet-stream" sparkle:edSignature="RtlJEW4+aimv3kFAn3ULTVgXJr3OsPxXH1875TUQwUxvQO3TCPNyJbrq9haGD6uedNYK52m7E5O3fZZHdbk7BQ==" />
-        </item>
-    <item>
-            <title>0.8.8</title>
-            <pubDate>Thu, 22 Oct 2026 18:36:03 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261022223316</sparkle:version>
-            <sparkle:shortVersionString>0.8.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.8.8 improves remote computer discovery and answering pi questions.
-
-- Find Tailscale computers when Unstall is opened from Finder, with clearer help when discovery needs attention.
-- Click anywhere on the Find a computer row to open or close discovery.
-- Answer pi questions that allow multiple choices with checkboxes, then send your selections with Submit.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.8/Unstall.zip" length="16106505" type="application/octet-stream" sparkle:edSignature="I8TcIfaNeteH7CyzkDXspUFRSKgdzcSTugapwDqPgXIw1FLIuB2hL4v308aNXzcK3OPyFX5x9kQDKdiLbXbpCA==" />
-        </item>
-    <item>
-            <title>0.8.7</title>
-            <pubDate>Thu, 22 Oct 2026 14:03:27 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261022180058</sparkle:version>
-            <sparkle:shortVersionString>0.8.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.8.7 makes saved remote computers easier to update.
-
-- Use Edit to change a saved computer's SSH destination without deleting and re-adding it.
-- Add and Edit now explain how to use user@host with your remote computer's login name.
-- Editing keeps your session filter, and leaving out a username still uses your existing SSH configuration defaults.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.7/Unstall.zip" length="16071307" type="application/octet-stream" sparkle:edSignature="HmalwfSYwXrZhJS8O1zs2D5d2Ojye/XC3Oz2sRn+0YToWxmGlzkaHnjFkKfqIShC4TxmMIVNOfazpCWiiyJwBw==" />
-        </item>
-    <item>
-            <title>0.8.6</title>
-            <pubDate>Thu, 22 Oct 2026 11:43:26 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261022154218</sparkle:version>
-            <sparkle:shortVersionString>0.8.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.8.6 makes voice-reply status and recovery feedback clearer.
-
-- The header says Preparing until the microphone is open. Listening and the notch glow now appear only while the microphone accepts speech.
-- Unclear replies no longer wait for an extra interpretation step that could not send an answer.
-- Missed or clipped replies, microphone capture failures, and replies that could not be sent now get spoken recovery feedback instead of silently doing nothing.
-
-Ordinary replies still send in one turn; high-risk actions still require confirmation, and production actions still need manual approval. The gap after the getting-ready chime has not been removed.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.6/Unstall.zip" length="16065258" type="application/octet-stream" sparkle:edSignature="9pIk2/9xVuwGFJFrkNhXFAsXXs7YKwhawXQKvOvOBh+y/Sj1vQ4Z99e9e75klyzcqWFMj+gsOqe9kOtkkoeKBA==" />
-        </item>
-    <item>
-            <title>0.8.5</title>
-            <pubDate>Wed, 21 Oct 2026 17:58:16 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261021215537</sparkle:version>
-            <sparkle:shortVersionString>0.8.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.8.5 turns on the anonymous usage stats announced in 0.8.4. Usage stats, plus any email address or feedback you choose to send, now go to PostHog.
-
-- Turn off anonymous usage stats in Settings → Privacy → Share anonymous usage stats.
-- The optional email and feedback cards can now send your submissions. Sending is your choice; you can skip either card.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.5/Unstall.zip" length="16051005" type="application/octet-stream" sparkle:edSignature="Sv5hr4Aav+nWz0pqjW+m4AZm7ohvIcneW8awGwNRifj4y6H3VDgcv7tn3LJXRT69kCb8fkeclvwL1+fima6rAA==" />
-        </item>
-    <item>
-            <title>0.8.4</title>
-            <pubDate>Wed, 21 Oct 2026 15:24:45 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261021192208</sparkle:version>
-            <sparkle:shortVersionString>0.8.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.8.4 lets you answer more agent prompts from the notch and makes ordinary voice replies a single turn. Voice remains off by default.
-
-- Answer pi and Claude yes/no prompts from the notch. Production merges need a second click and can never be approved by voice.
-- With voice enabled, ordinary approvals, choices and dictated replies go through without a separate “Send?” step. Risky actions still ask for confirmation.
-- Anonymous usage stats are on by default, with a notice on first launch after updating and a Settings toggle. This build has no analytics key, so it sends no usage stats, email addresses or feedback.
-- Optional email and feedback cards appear after three and seven active days, once the notice is dismissed and no agent card is waiting. In this build, Send is disabled and the cards explain that sending is unavailable; you can skip them.
-- Read the Privacy Policy and Terms of Service at unstall.dev.
-- Keeps the Muse approval and herdr connection crash fix shipped in 0.8.3.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.4/Unstall.zip" length="16051202" type="application/octet-stream" sparkle:edSignature="wfHOdRpvwQGC4MtvMnJLRBs1GDUgLv06G7p8dxT9bD4OX5SqwHRbJBOeh5ZYDUydMhn7gaWJhB8c+HlCs41WAw==" />
-        </item>
-    <item>
-            <title>0.8.3</title>
-            <pubDate>Tue, 20 Oct 2026 18:45:16 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261020224134</sparkle:version>
-            <sparkle:shortVersionString>0.8.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall now shows Grok, Muse and OpenCode sessions in the notch, and Grok is no longer labelled as Claude. You can answer approvals from the notch by click or voice: OpenCode through its plugin, Grok when started with `notch-agent grok`, and Muse shell commands through its hook. Connect each agent in Settings first. Allow always only appears where the exact saved rule is known.</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.3/Unstall.zip" length="15817250" type="application/octet-stream" sparkle:edSignature="qHcysJXZ7RR2da0/imdAwemZifKfjbpxU6QKJT7BuXq+2djJGKUPXI4w29yJ0HElRU1WTXnddDJlyJYLX6nLDA==" />
-        </item>
-    <item>
-            <title>0.8.2</title>
-            <pubDate>Mon, 19 Oct 2026 18:30:14 -0400</pubDate>
-            <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261019222845</sparkle:version>
-            <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="plain-text">Unstall 0.8.2 makes voice cards easier to follow and answer.
-
-- Each card opens before speaking and gives one plain sentence, without reading symbol names aloud.
-- A chime and glow show when Unstall is listening.
-- Answer with yes, no, an option, or your own words. Free-form replies are read back before sending.
-- A plain yes approves at once. Risky commands and free-form replies get one confirmation.
-
-Voice remains off by default. Existing preferences are preserved. Automatic update checks are enabled by default; installing an update remains your choice.
-
-The ZIP is for in-app updates. The DMG is for manual installation. Both are signed and notarized by Voxtur Inc.
-</description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.2/Unstall.zip" length="14590109" type="application/octet-stream" sparkle:edSignature="xodKg1Uu3lDg6BpoFj39BoRix2CcK42lJ7l0zjqfT5UZYRr9laTC5NI1S+4153SjeDu8HsJZ9duomyNFuNOJAQ==" />
+The iPhone app is available through private TestFlight testing and is not yet publicly available.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.0/Unstall.zip" length="18759365" type="application/octet-stream" sparkle:edSignature="w5cXU+SLzmkNg3exnJ8/07///zKZ50EIS9vSX2sks/yE4BTyunG5bwbemOGyJZ+vD73IQLidlEQGjKScOJs5Ag=="/>
         </item>
     </channel>
 </rss>
