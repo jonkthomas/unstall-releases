@@ -3,20 +3,22 @@
     <channel>
         <title>Unstall</title>
         <item>
-            <title>0.10.0</title>
-            <pubDate>Thu, 29 Oct 2026 00:23:47 -0400</pubDate>
+            <title>0.10.1</title>
+            <pubDate>Thu, 29 Oct 2026 00:43:29 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
-            <sparkle:version>20261029042052</sparkle:version>
-            <sparkle:shortVersionString>0.10.0</sparkle:shortVersionString>
+            <sparkle:version>20261029044246</sparkle:version>
+            <sparkle:shortVersionString>0.10.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="plain-text"><![CDATA[Paired iPhones can receive agent alerts through Unstall's relay at unstall.dev, without adding an Apple push key on each Mac. Pushes contain only random IDs; agent text and your answers travel directly between your iPhone and Mac over Tailscale.
 
 The iPhone app adds a setup checklist and renews its push authorization automatically. Existing pairings keep working. Each Mac keeps its old push key until the relay has accepted a push for every paired iPhone.
 
+This version also restores the anonymous usage statistics that 0.10.0 briefly shipped without; nothing else changed from 0.10.0.
+
 The iPhone app is available through private TestFlight testing and is not yet publicly available.
 ]]></description>
-            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.0/Unstall.zip" length="18759365" type="application/octet-stream" sparkle:edSignature="w5cXU+SLzmkNg3exnJ8/07///zKZ50EIS9vSX2sks/yE4BTyunG5bwbemOGyJZ+vD73IQLidlEQGjKScOJs5Ag=="/>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.1/Unstall.zip" length="18759415" type="application/octet-stream" sparkle:edSignature="TqiHYLcEZiJJORVPlzsENRAsB8j5nkfUsvtLMUEYjgrJueM7t7C/+jtlQrR8SbYndXGKVcMsuGGpKAgFSukrBg=="/>
         </item>
     </channel>
 </rss>
