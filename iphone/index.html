@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Unstall for iPhone · Unstall</title>
+<meta name="description" content="Set up the Unstall for iPhone beta: what you need, the TestFlight invite, pairing with your Mac, notifications and troubleshooting.">
+<style>
+/* Unstall help page. Static, no build step, same tokens and layout as the legal pages (../privacy). */
+:root{
+  --paper:#F3F0EA; --paper-2:#EAE5DC; --ink:#1C1A17; --ink-2:#4A4640; --ink-3:#6E6960;
+  --rule:#D8D1C5; --stage:#141210; --stage-ink:#F0EEE9;
+  --coral:#FB8371; --coral-ink:#B4412F; --amber-ink:#8A6400;
+  --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  --wrap: min(760px, 100% - 2*clamp(20px, 5vw, 56px));
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--paper); color:var(--ink); font:400 17px/1.6 var(--sans); text-rendering:optimizeLegibility}
+a{color:inherit}
+.wrap{width:var(--wrap); margin-inline:auto}
+:focus-visible{outline:3px solid var(--coral-ink); outline-offset:3px; border-radius:6px}
+
+header.top .wrap{display:flex; align-items:center; gap:24px; padding:20px 0}
+.mark{display:flex; align-items:center; gap:10px; min-height:44px; font-weight:650; letter-spacing:-.01em; text-decoration:none}
+.mark i{width:26px; height:18px; background:var(--stage); border-radius:0 0 8px 8px; position:relative}
+.mark i::after{content:""; position:absolute; left:8px; right:8px; bottom:3px; height:2px; border-radius:2px; background:var(--coral)}
+nav.links{display:flex; gap:22px; margin-left:auto; font-size:15px; color:var(--ink-2)}
+nav.links a{display:inline-flex; align-items:center; min-height:44px; text-decoration:none}
+nav.links a:hover, nav.links a[aria-current]{color:var(--ink)}
+nav.links a[aria-current]{text-decoration:underline; text-underline-offset:4px}
+
+main{padding:clamp(20px,4vw,44px) 0 clamp(64px,10vw,110px)}
+.kicker{font-size:14px; font-weight:600; color:var(--ink-3); margin:0 0 10px}
+h1{font:500 clamp(36px,5.4vw,56px)/1.05 var(--serif); letter-spacing:-.02em; margin:0 0 14px}
+.updated{font-size:14px; color:var(--ink-3); margin:0}
+.summary{margin:28px 0 8px; padding:20px 22px; background:var(--paper-2); border-radius:14px; color:var(--ink-2)}
+.summary p{margin:0}
+h2{font:500 clamp(24px,3vw,30px)/1.15 var(--serif); letter-spacing:-.015em; margin:48px 0 12px}
+h3{font:600 16px/1.3 var(--sans); margin:26px 0 6px}
+p, li{color:var(--ink-2); text-wrap:pretty}
+ul{padding-left:1.2em} li{margin:6px 0}
+code{font:14px/1.4 ui-monospace, "SF Mono", Menlo, monospace; background:var(--paper-2); padding:1px 5px; border-radius:5px; overflow-wrap:anywhere}
+strong{color:var(--ink); font-weight:600}
+
+/* Numbered steps: the same three the app shows when no Mac is paired. */
+ol.steps{list-style:none; counter-reset:step; padding:0; margin:18px 0 0}
+ol.steps > li{counter-increment:step; position:relative; padding:0 0 0 44px; margin:0 0 18px}
+ol.steps > li::before{content:counter(step); position:absolute; left:0; top:1px; width:28px; height:28px; border-radius:50%;
+  background:var(--stage); color:var(--stage-ink); font:600 14px/28px var(--sans); text-align:center}
+ol.steps p{margin:2px 0 0}
+
+dl.trouble{margin:18px 0 0}
+dl.trouble div{padding:14px 0; border-bottom:1px solid var(--rule)}
+dl.trouble div:first-child{border-top:1px solid var(--rule)}
+dl.trouble dt{font-weight:600; color:var(--ink)}
+dl.trouble dd{margin:4px 0 0; color:var(--ink-2)}
+
+footer{background:var(--stage); color:#8f897f; font-size:13.5px; border-top:1px solid #2b2824}
+footer .wrap{width:min(1120px, 100% - 2*clamp(20px, 5vw, 56px)); display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between; padding:22px 0 calc(22px + env(safe-area-inset-bottom))}
+footer a{color:#cfc8bd}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="../" aria-label="Unstall home"><i aria-hidden="true"></i>Unstall</a>
+    <nav class="links" aria-label="Site">
+      <a href="../iphone" aria-current="page">iPhone</a>
+      <a href="../privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="kicker">Unstall for iPhone · Private beta</p>
+    <h1>Set up Unstall for iPhone</h1>
+    <p class="updated">Last updated 2026-10-28</p>
+
+    <div class="summary">
+      <p>When an orchestrator on one of your paired Macs asks a question or wants permission, Unstall for iPhone
+      sends you a push. Answer from the notification, or open the app to see everything waiting and approve, deny,
+      deny with a note, or pick an answer. Workers stay quiet. The app is in private beta on TestFlight: testers are
+      invited by email. It is not on the App Store, and there is no public link.</p>
+    </div>
+
+    <h2 id="need">What you need</h2>
+    <ul>
+      <li>An iPhone with iOS 17 or later.</li>
+      <li>A Mac running Unstall 0.10 or later. Download it from <a href="../">unstall.dev</a>, or use Check for
+      Updates if you already have it.</li>
+      <li><a href="https://tailscale.com/download">Tailscale</a> on the iPhone and on the Mac, signed in to the same
+      tailnet. The iPhone reaches your Mac only over Tailscale.</li>
+      <li>herdr is optional, as it is for the Mac app.</li>
+      <li>The TestFlight invite email we sent you.</li>
+    </ul>
+
+    <h2 id="invite">Install from the invite</h2>
+    <ol class="steps">
+      <li><strong>Accept the email invite.</strong>
+        <p>Open the invite on your iPhone and follow its link.</p></li>
+      <li><strong>Install TestFlight.</strong>
+        <p>Get Apple’s TestFlight app from the App Store if you don’t have it.</p></li>
+      <li><strong>Install Unstall.</strong>
+        <p>In TestFlight, accept the invite and install Unstall. TestFlight offers each new beta build; a build stops
+        opening when it expires, so install the newest one.</p></li>
+    </ol>
+
+    <h2 id="setup">Set up</h2>
+    <p>Until a Mac is paired, the app’s Macs tab shows the same three steps.</p>
+    <ol class="steps">
+      <li><strong>Tailscale on iPhone and Mac, same tailnet.</strong>
+        <p>Install Tailscale on both, sign in to the same tailnet and turn it on. The app says “Tailscale looks
+        connected” when it sees a Tailscale address on the iPhone. That is a hint, not a check.</p></li>
+      <li><strong>Install Unstall on your Mac (0.10 or later).</strong>
+        <p>The app can share the unstall.dev link so you can open it on the Mac. Tick Installed when it’s done.</p></li>
+      <li><strong>Pair.</strong>
+        <p>On the Mac, open Settings → Connections and click Pair new iPhone… to show a QR code. On the iPhone, open the scanner
+        from step 3 and scan it. Each code works once and expires; if it fails, make sure Tailscale is on for both and the Mac is awake,
+        then scan a new code. Pair each Mac you want pushes from.</p></li>
+    </ol>
+
+    <h2 id="notifications">Allow notifications</h2>
+    <ul>
+      <li>Tap <strong>Allow notifications</strong> when the app asks. If you chose Not now, turn them on in iPhone
+      Settings → Notifications → Unstall.</li>
+      <li>Pushes are Time Sensitive. Leave Time Sensitive Notifications on for Unstall in the same place.</li>
+      <li>A Focus can hold back even Time Sensitive pushes. For each Focus you use: Settings → Focus → the Focus → Apps
+      → add Unstall. Or, in the same place, turn on Time Sensitive Notifications. Unstall can’t change or check this
+      for you.</li>
+    </ul>
+
+    <h2 id="troubleshooting">Troubleshooting</h2>
+    <dl class="trouble">
+      <div><dt>No push arrives</dt>
+        <dd>Pushes start on your Mac. While the Mac is asleep, or Unstall isn’t running on it, no push is sent. If
+        Tailscale is off on the Mac or the iPhone, the iPhone can’t reach the Mac: a push may show only “Agent
+        waiting”, and answers can’t be sent. Turn Tailscale on and open the app.</dd></div>
+      <div><dt>Pushes stopped</dt>
+        <dd>Open the app once. The iPhone renews its push permission from time to time, usually without being
+        opened; if it hasn’t run for about three weeks, opening it renews it.</dd></div>
+      <div><dt>“Pushes paused; items still show while the app is open.”</dt>
+        <dd>The iPhone couldn’t get push permission from the relay. Waiting items still show and can be answered
+        while the app is open. It retries on its own.</dd></div>
+      <div><dt>“This Mac can’t send pushes yet. Update Unstall on the Mac.”</dt>
+        <dd>That Mac runs a version older than 0.10. Update it, then open the app on the iPhone.</dd></div>
+      <div><dt>Revoke or re-pair</dt>
+        <dd>On the Mac, open Settings → Connections and click Revoke… beside the iPhone. That iPhone can no longer see or answer
+        that Mac’s agents and gets no more pushes from it. On the iPhone: Macs → the Mac → Forget this Mac. To
+        re-pair, pair again from step 3.</dd></div>
+    </dl>
+
+    <h2 id="privacy">Privacy</h2>
+    <p>Pushes carry no prompt content. Your Mac sends them through Unstall’s push relay at unstall.dev to Apple, and
+    each one says only “Agent waiting”. The relay receives the iPhone’s push token and two random IDs, and stores
+    nothing. Commands, questions, answers and names travel only between your Mac and your iPhone, over Tailscale. The
+    details are in the <a href="../privacy#iphone">Privacy Policy</a>.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Testers with a question: <a href="mailto:hello@unstall.dev">hello@unstall.dev</a></p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><a href="../privacy">Privacy</a> · <a href="../terms">Terms</a> · <a href="../legal/LICENSE.txt">License</a> · <a href="../legal/NOTICE.txt">Notice</a></span>
+    <span>Works with <a href="https://herdr.dev">herdr</a>.</span>
+  </div>
+</footer>
+
+</body>
+</html>

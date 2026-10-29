@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="data:,">
 <title>Privacy Policy · Unstall</title>
-<meta name="description" content="What Unstall and unstall.dev collect, what stays on your Mac, and the choices you have.">
+<meta name="description" content="What Unstall, Unstall for iPhone, its push relay and unstall.dev collect, what stays on your devices, and the choices you have.">
 <style>
 /* Unstall legal page. Static, no build step, same tokens as the landing page (../index.html). */
 :root{
@@ -74,13 +74,15 @@ footer a{color:#cfc8bd}
   <div class="wrap">
     <p class="kicker">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated 2026-10-21</p>
+    <p class="updated">Last updated 2026-10-28</p>
 
     <div class="summary">
       <p><strong>The short version.</strong> Unstall is a free Mac app. It runs on your Mac. Your agent sessions, their
       commands and prompts, and your voice audio are not sent to us. The answers you give go to your own agents, over
       SSH if they run on another machine you added, and if you add your own OpenRouter key, the text of a card goes to
-      OpenRouter to write its spoken summary. The app sends a few anonymous usage events
+      OpenRouter to write its spoken summary. If you pair Unstall for iPhone, card text goes from your Mac to your
+      iPhone over Tailscale, and your Mac sends content-free pushes through our push relay at unstall.dev, which stores
+      nothing. The app sends a few anonymous usage events
       (on by default, one switch in Settings turns them off), checks for updates, and downloads voice models only if you
       turn voice on. You can give us an email address or a feedback score if you want to; you never have to. We do not
       sell data.</p>
@@ -88,7 +90,8 @@ footer a{color:#cfc8bd}
 
     <h2 id="who">Who we are</h2>
     <p>Unstall and unstall.dev are operated by Voxtur Inc. (“Voxtur”, “we”, “us”). This policy covers the Unstall Mac
-    app, including the <code>notch-agent</code> launcher and the hooks it installs when you connect an agent, and the
+    app, including the <code>notch-agent</code> launcher and the hooks it installs when you connect an agent, the
+    Unstall for iPhone app (in private beta on TestFlight), the push relay at <code>unstall.dev/api</code>, and the
     unstall.dev website. Contact: <a href="mailto:hello@unstall.dev">hello@unstall.dev</a>.</p>
 
     <h2 id="table">What we collect, and what we never collect</h2>
@@ -106,6 +109,9 @@ footer a{color:#cfc8bd}
           <li>Your email address, only if you enter it and press Send</li>
           <li>A 0–10 feedback score and an optional one-line reason (up to 280 characters), only if you press Send</li>
           <li>On unstall.dev: a page view when you open the home page, and which Download button you click</li>
+          <li>From Unstall for iPhone, if its usage stats are on: the events listed under
+          <a href="#iphone">Unstall for iPhone and the push relay</a></li>
+          <li>Through the push relay, only to deliver a push and not stored: the items listed in that section</li>
         </ul>
       </div>
       <div>
@@ -117,6 +123,7 @@ footer a{color:#cfc8bd}
           <li>Voice transcripts or audio</li>
           <li>Your SSH keys, API keys or agent settings</li>
           <li>Cookies on unstall.dev</li>
+          <li>Any card text through the push relay</li>
         </ul>
       </div>
     </div>
@@ -127,7 +134,8 @@ footer a{color:#cfc8bd}
     <p>Unstall reads what your agents are doing so it can show their questions in the notch. It gets this from
     <a href="https://herdr.dev">herdr</a> (through herdr’s local socket), from the launcher and hooks you connect, and
     from the visible text of the terminal pane where an agent is waiting. All of that is processed on your Mac and is
-    not sent to us.</p>
+    not sent to us. If you pair an iPhone, your Mac sends the cards it shows to that iPhone, directly over Tailscale
+    (<a href="#iphone">below</a>).</p>
     <p>Unstall stores its own files on your Mac: its settings in macOS preferences, records and backups for the agents
     you connect in <code>~/Library/Application Support/Unstall</code>, status files in
     <code>~/Library/Application Support/NotchAgent</code>, and, for pi, question files in
@@ -154,8 +162,44 @@ footer a{color:#cfc8bd}
     secrets removed) to OpenRouter to write the spoken sentence. Unstall does not add the agent or project name, but
     the command or question itself may contain names and file paths, and those are sent as they are. Cards that mention
     credentials, and commands on Unstall’s fixed risky list, are never sent. Your key is kept in the macOS Keychain. This
-    is the only way card text leaves your Mac, it happens only with your key, and OpenRouter’s own terms and privacy
+    is the only way card text goes to a third party (your own paired iPhone aside), it happens only with your key, and OpenRouter’s own terms and privacy
     policy apply to it. Remove the key to stop it.</p>
+
+    <h2 id="iphone">Unstall for iPhone and the push relay</h2>
+    <p>Unstall for iPhone shows what your agents are waiting on and lets you answer. It talks to Unstall on each Mac
+    you pair, directly over Tailscale, with a certificate pinned at pairing. Commands, questions, answers, agent output,
+    and project, session and Mac names travel only on that connection, and never through us.</p>
+    <p>To wake the iPhone when an agent is waiting, your Mac asks our push relay at <code>unstall.dev/api</code> to
+    send a push through Apple’s push service. Every push carries the same fixed text, “Agent waiting”, and no prompt
+    content. The iPhone then fetches the card from your Mac over Tailscale.</p>
+    <h3>What the relay receives</h3>
+    <ul>
+      <li><strong>When the iPhone gets push permission</strong> (after install, then about once a week): its push
+      token, whether it is a production or development build, the app’s identifier, and App Attest data, which proves
+      the request comes from the genuine Unstall app on a real iPhone. The relay returns a signed grant that contains
+      the push token and expires after 30 days. The iPhone gives the grant to the Macs it is paired with.</li>
+      <li><strong>For each push, from your Mac:</strong> the grant (which contains the push token), two random IDs
+      (one for the Mac, one for the waiting item), whether to show or clear a notification, and an expiry time.</li>
+    </ul>
+    <p><strong>What it stores:</strong> nothing. The relay has no database and keeps nothing between requests. Its
+    own log records only which endpoint was called and the outcome, not the token, grant or IDs. Vercel’s request log
+    keeps the IP address, path and status of each request under Vercel’s retention.</p>
+    <p><strong>What never reaches the relay:</strong> card text, commands, prompts, answers, agent output, names or
+    file paths. There is no database, and pushes carry no prompt content.</p>
+    <h3>On the iPhone</h3>
+    <ul>
+      <li>The credentials for each paired Mac and the push grant are kept in the iPhone’s Keychain. Which setup
+      steps you ticked is kept in the app’s preferences.</li>
+      <li>Anonymous usage stats, on by default, sent to PostHog with a random install id: the app version, build and
+      iOS version when it starts; whether pairing and getting push permission worked; whether you opened an item from
+      the app or a notification; the kind of answer you gave (for example approve, deny or pick an option) and whether
+      it went through; and whether a notification got its details and how it was cleared. Each value comes from a fixed
+      set; no card text, names or paths. Turn off <strong>Share anonymous usage stats</strong> on the Macs tab to stop
+      them.</li>
+    </ul>
+    <h3>On the Mac</h3>
+    <p>Unstall keeps each paired iPhone’s credentials, push token and grant in the macOS Keychain. Revoke an iPhone
+    in Settings → Connections and that Mac stops answering it and sending it pushes.</p>
 
     <h2 id="permissions">macOS permissions</h2>
     <div class="tbl">
@@ -182,6 +226,10 @@ footer a{color:#cfc8bd}
     <p>Unstall connects only to hosts you add, using your own <code>ssh</code> setup and keys. It never asks for a
     password. It forwards herdr’s socket on that machine to your Mac to read agent state. The connection runs directly
     between your Mac and your machine and does not pass through us.</p>
+    <h3>Your iPhone and the push relay</h3>
+    <p>Only after you pair an iPhone: Unstall accepts connections from that iPhone over Tailscale, and sends push
+    requests to the relay at <code>unstall.dev/api</code> over HTTPS, as described
+    <a href="#iphone">above</a>. The relay and Vercel receive your Mac’s IP address with each request.</p>
     <h3>Updates</h3>
     <p>Unstall uses Sparkle to check for updates. It checks automatically by default; you can turn automatic checks off
     in Settings or use Check for Updates in the menu instead. Checks read our update feed on GitHub Pages
@@ -235,8 +283,9 @@ footer a{color:#cfc8bd}
     <h2 id="share">Who we share it with</h2>
     <p>We do not sell personal information and do not share it for advertising. Service providers process it for us:</p>
     <ul>
-      <li>PostHog: app and site analytics, email and feedback answers (United States).</li>
-      <li>Vercel: hosting for unstall.dev.</li>
+      <li>PostHog: app, iPhone app and site analytics, email and feedback answers (United States).</li>
+      <li>Vercel: hosting for unstall.dev and the push relay.</li>
+      <li>Apple: push delivery to your iPhone (the push token and the fixed push), and App Attest.</li>
       <li>GitHub: the update feed and app downloads.</li>
       <li>Hugging Face: voice model downloads, only if you turn voice on.</li>
       <li>OpenRouter: only if you add your own key, under your own account with them.</li>
@@ -245,12 +294,14 @@ footer a{color:#cfc8bd}
     of a merger, acquisition or sale of assets, in which case this policy continues to apply to it.</p>
 
     <h2 id="transfers">Where it is processed</h2>
-    <p>PostHog stores our analytics in its US cloud. If you are outside the United States, the events above are
-    transferred to and processed there.</p>
+    <p>PostHog stores our analytics in its US cloud. The push relay runs on Vercel in its iad1 region (Washington,
+    D.C., United States). Apple processes push delivery and App Attest. If you are outside the United States, the
+    information above is transferred to and processed there.</p>
 
     <h2 id="retention">How long we keep it</h2>
     <p>We keep usage events only as long as they help us improve Unstall. We keep an email address until you ask us to
-    delete it or stop receiving emails, and delete it on request.</p>
+    delete it or stop receiving emails, and delete it on request. The push relay keeps nothing between requests;
+    Vercel keeps its request logs under its own retention. A push grant expires 30 days after it is issued.</p>
 
     <h2 id="choices">Your choices and rights</h2>
     <ul>
@@ -258,6 +309,8 @@ footer a{color:#cfc8bd}
       <li>Skip the email and feedback asks, or never open them.</li>
       <li>Leave voice mode off, or remove your OpenRouter key.</li>
       <li>Turn automatic update checks off in Settings.</li>
+      <li>Turn off Share anonymous usage stats on the iPhone app’s Macs tab. Revoke a paired iPhone in the Mac’s
+      Settings → Connections, or forget a Mac on the iPhone.</li>
       <li>To remove Unstall completely: remove your OpenRouter key in Settings → Voice if you added one (it is kept in
       your Keychain), disconnect your agents in Settings, quit and delete the app, then delete
       <code>~/Library/Application Support/Unstall</code>, <code>~/Library/Application Support/NotchAgent</code> and, if
@@ -271,7 +324,8 @@ footer a{color:#cfc8bd}
     protection authority.</p>
 
     <h2 id="security">Security</h2>
-    <p>The app’s connections to PostHog, GitHub, Hugging Face and OpenRouter use HTTPS. Updates are signed and checked
+    <p>The app’s connections to PostHog, GitHub, Hugging Face, OpenRouter and the push relay use HTTPS. The iPhone
+    talks to your Mac over Tailscale with a certificate pinned at pairing. Updates are signed and checked
     before they install. No system is perfectly secure, and we cannot guarantee absolute security.</p>
 
     <h2 id="children">Children</h2>

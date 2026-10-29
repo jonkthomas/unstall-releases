@@ -1,2 +1,3 @@
-// Generated public project configuration. Never use a personal API key.
-window.UNSTALL_ANALYTICS = Object.freeze({"key": "phc_khsVmRBnd3T6HPcW6A8poC48SwMEr5yqxvuUcMD2ENKv", "host": "https://us.i.posthog.com"});
+// Public PostHog PROJECT token, never a personal API key. Empty means no SDK or
+// analytics requests. Set before publishing, or generate with tools/configure-analytics.py.
+window.UNSTALL_ANALYTICS = Object.freeze({key: "", host: "https://us.i.posthog.com"});
