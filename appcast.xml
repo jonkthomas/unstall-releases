@@ -3,6 +3,21 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.4</title>
+            <pubDate>Sun, 01 Nov 2026 20:46:24 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261102012837</sparkle:version>
+            <sparkle:shortVersionString>0.10.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[- An under-the-hood update. Unstall on your Mac works the same as in 0.10.3.
+- The iPhone companion can now show answer buttons on simple single-choice question notifications.
+
+The iPhone companion remains in private TestFlight testing and is not yet publicly available.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.4/Unstall.zip" length="18855136" type="application/octet-stream" sparkle:edSignature="IpJCljHaY77FObMDoxSQQQPGPcLnLvy8/Kne65zmvUGcyE9WAPmDFgfhdRSQXUpjoyRJlCiEMySLbXIVTfm1AQ=="/>
+        </item>
+        <item>
             <title>0.10.3</title>
             <pubDate>Sun, 01 Nov 2026 13:43:05 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
