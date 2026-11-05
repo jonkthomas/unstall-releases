@@ -3,6 +3,22 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.5</title>
+            <pubDate>Thu, 05 Nov 2026 12:00:43 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261105165701</sparkle:version>
+            <sparkle:shortVersionString>0.10.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[- iPhone replies now stay “Unconfirmed” until the response is confirmed in the agent session on your Mac, with more accurate retry history. Mac-local and voice answers work even when no iPhone is paired.
+- Paired-iPhone questions refresh faster, while Unstall reduces background disk activity by leaving unchanged screen-saver information alone.
+- Fixed private TestFlight packaging so push notifications, Mac pairing and shared app data keep their required permissions.
+
+The iPhone companion remains in private TestFlight testing and is not yet publicly available.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.5/Unstall.zip" length="18884705" type="application/octet-stream" sparkle:edSignature="NYCdXoGGeUpOGf2I0z2BDGNrDLRtlK1SVa44ilxFt+Wl7y93aGa7RqlnKLga15XzdJQqVlOMGCwFS5nXMQ7CCQ=="/>
+        </item>
+        <item>
             <title>0.10.4</title>
             <pubDate>Sun, 01 Nov 2026 20:46:24 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
