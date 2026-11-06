@@ -3,6 +3,22 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.6</title>
+            <pubDate>Fri, 06 Nov 2026 11:09:03 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261106160502</sparkle:version>
+            <sparkle:shortVersionString>0.10.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[- Report a problem with a specific prompt on your Mac or paired iPhone, with an optional comment to help us understand what went wrong.
+- Review the report before sending: prompt text is included by default, and you can leave it out. Send submits the report; it does not answer the agent. Your pending question and draft stay in place.
+- Reports can contain sensitive prompt details. Check the preview before sending; automatic filtering cannot catch every secret.
+
+The iPhone companion remains in private TestFlight testing and is not yet publicly available.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.6/Unstall.zip" length="19432462" type="application/octet-stream" sparkle:edSignature="tpad5bKUjutjAckE9vihQucp0hR8DXUCitnGlXSHzK0g1YiuK3QWuVxThmuKh5bt8ZakRnf6q0dMAdJhgLm0Dg=="/>
+        </item>
+        <item>
             <title>0.10.5</title>
             <pubDate>Thu, 05 Nov 2026 12:00:43 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
