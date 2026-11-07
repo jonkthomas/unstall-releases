@@ -3,6 +3,26 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.7</title>
+            <pubDate>Fri, 06 Nov 2026 19:14:29 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261107001108</sparkle:version>
+            <sparkle:shortVersionString>0.10.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[- Start an Unstall-owned Kimi or Antigravity session from your terminal and review supported requests on your Mac or paired iPhone. The launchers use each agent's existing login and leave unrelated sessions alone.
+- Kimi's native option questions now include multiple questions and checkbox selections. Unsupported forms and free-text options that the native agent cannot represent are explicitly refused, never guessed.
+- Antigravity offers Allow once and Deny for native approvals. Its Settings connection reports status only; full controls use the owned launcher. Kimi's Settings connection adds only a marked, native-validated status hook block and preserves existing hooks.
+- Grok's current native approvals and questions are covered by real-agent regressions. Persistent permissions stay hidden unless their exact scope is proven; an ordinary permission is never silently broadened.
+- Choosing to continue in the terminal releases the card without cancelling your request. Terminal answers no longer wait behind a pending native-card read.
+
+Existing Muse behavior is unchanged. New Muse native-session support is deferred, not included in this release.
+
+The iPhone companion remains in private TestFlight testing (version 0.1.0, build 9).
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.7/Unstall.zip" length="19532573" type="application/octet-stream" sparkle:edSignature="nMd54MJxiiNUnx+cizXd2JW4CnHVhIPdGsyU3Rsi04gUlX2elOyHV2FflmMrpKWZcpkiRoRxGly4b9FSlZSfDw=="/>
+        </item>
+        <item>
             <title>0.10.6</title>
             <pubDate>Fri, 06 Nov 2026 11:09:03 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
