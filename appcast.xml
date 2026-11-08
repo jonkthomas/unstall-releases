@@ -3,6 +3,24 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.8</title>
+            <pubDate>Sun, 08 Nov 2026 18:08:58 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261108230736</sparkle:version>
+            <sparkle:shortVersionString>0.10.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[# Unstall 0.10.8
+
+- Fix replies to Pi prompts whose Enter/Esc instructions wrap across terminal lines.
+- Stop manual reply controls when the displayed prompt or selection has changed.
+- Keep delivery status accurate when a reply is blocked or cannot be confirmed.
+- Prevent mode switching from answering a pending approval.
+- In the updated iPhone companion, open web links in questions without submitting an answer.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.8/Unstall.zip" length="19566879" type="application/octet-stream" sparkle:edSignature="7w9rbYcn8fC2f58uOVIBBhjTX1Bg4G9ZG5hrEksbvjaUqt1ZAnESuFJitMS60Q+uV8p3pA2vvPBq4EROkRulCw=="/>
+        </item>
+        <item>
             <title>0.10.7</title>
             <pubDate>Fri, 06 Nov 2026 19:14:29 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
