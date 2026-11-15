@@ -3,6 +3,23 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.10</title>
+            <pubDate>Sat, 14 Nov 2026 21:28:21 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261115022500</sparkle:version>
+            <sparkle:shortVersionString>0.10.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[# Unstall 0.10.10
+
+- Old items no longer pile up in the iPhone Waiting list.
+- In the updated iPhone companion, swipe to dismiss an item.
+- Answers that couldn't be confirmed clear from the iPhone after 10 minutes and can still be answered from the Mac.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.10/Unstall.zip" length="19590147" type="application/octet-stream" sparkle:edSignature="EmwR4kz3P9jME0lugcoqjrZNpF/NZhnOBa6EWOWpqavfBtxvKg6kvDqwyIf2tM1g0q6+gRwCxeWB1J3RpyiVBw=="/>
+        </item>
+    
+<item>
             <title>0.10.9</title>
             <pubDate>Sat, 14 Nov 2026 17:34:15 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -19,7 +36,6 @@
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.9/Unstall.zip" length="19569586" type="application/octet-stream" sparkle:edSignature="fp6ZLt3cnBVg+nHvBKZtM2LaYcoxTI1NqBwE/TxTJDDEktAWYk3/pcPV6DgWNJX0ExR9fTQn35nUEoXwbs5fBg=="/>
         </item>
-    
 <item>
             <title>0.10.8</title>
             <pubDate>Sun, 08 Nov 2026 18:08:58 -0500</pubDate>
