@@ -3,6 +3,24 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.11</title>
+            <pubDate>Sun, 15 Nov 2026 00:58:39 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261115054843</sparkle:version>
+            <sparkle:shortVersionString>0.10.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[# Unstall 0.10.11
+
+- Pi questions with three choices and a text-entry option now show notification buttons on iPhone.
+- Long question text no longer prevents answering on iPhone.
+- Free-text pi questions remain answerable on iPhone.
+- Pi and Codex questions with hidden options stay in the terminal to prevent selecting the wrong answer.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.11/Unstall.zip" length="19595208" type="application/octet-stream" sparkle:edSignature="GtZI4vsyJa+efFfHPw6hVVn6Mkk3AkinZuf5wot1dn/xXNk+a/ixueWurwzlRWD8AhCHnNRNMMsn0mTe5MylAQ=="/>
+        </item>
+    
+<item>
             <title>0.10.10</title>
             <pubDate>Sat, 14 Nov 2026 21:28:21 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -18,7 +36,6 @@
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.10/Unstall.zip" length="19590147" type="application/octet-stream" sparkle:edSignature="EmwR4kz3P9jME0lugcoqjrZNpF/NZhnOBa6EWOWpqavfBtxvKg6kvDqwyIf2tM1g0q6+gRwCxeWB1J3RpyiVBw=="/>
         </item>
-    
 <item>
             <title>0.10.9</title>
             <pubDate>Sat, 14 Nov 2026 17:34:15 -0500</pubDate>
