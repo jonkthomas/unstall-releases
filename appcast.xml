@@ -3,6 +3,23 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.14</title>
+            <pubDate>Sun, 15 Nov 2026 20:38:57 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261116013510</sparkle:version>
+            <sparkle:shortVersionString>0.10.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[# Unstall 0.10.14
+
+- No more empty "Agent waiting" alerts on your iPhone while a pi agent is still working.
+- Questions with four answers now get four buttons in the iPhone notification.
+- Check-several and multi-step questions open straight into the app to answer, without being flagged as Mac-only.
+- When a pi question's options don't all fit on screen, the Mac shows the question clearly and points you to the terminal, and your iPhone asks you to answer it on your Mac.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.14/Unstall.zip" length="19607105" type="application/octet-stream" sparkle:edSignature="UenCv6XcBACi4TUeo/fyw2Jq5kROtXzDbb4or/SJC/VTPvAzCE4BR6uuTlvQBIJ3lcYSnhNAG4KLePO78Nj6Bw=="/>
+        </item>
+    <item>
             <title>0.10.13</title>
             <pubDate>Sun, 15 Nov 2026 14:25:33 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -15,8 +32,7 @@
 - Needs you no longer keeps questions from agents that have exited.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.13/Unstall.zip" length="19601874" type="application/octet-stream" sparkle:edSignature="syD8PIUJwcfpiX3ZxpcliXFIvAOps6in5WcdC4gKJX8BaM2Vj1t/ymCfdNkt1Z4qQARVOZdn4nPrHnbSPIw4CQ=="/>
-        </item>
-    <item>
+        </item><item>
             <title>0.10.12</title>
             <pubDate>Sun, 15 Nov 2026 12:04:59 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
