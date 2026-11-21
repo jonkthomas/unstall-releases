@@ -3,6 +3,21 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.15</title>
+            <pubDate>Sat, 21 Nov 2026 13:57:06 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261121185123</sparkle:version>
+            <sparkle:shortVersionString>0.10.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[# Unstall 0.10.15
+
+- When a pi question becomes fully readable, your iPhone now picks up its choices automatically instead of staying on a blank question.
+- While a pi question can only be answered on the Mac, the iPhone shows the question and its options and says to answer in the terminal.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.15/Unstall.zip" length="19610072" type="application/octet-stream" sparkle:edSignature="C5Za0MTIuECYFawDCcXlzLk7H+E9mTYfkXOsuxsbOWfwVVxjg3+tcpMO0uHUXGiz2rwdAM2AXDlAatO81i0VBg=="/>
+        </item>
+        <item>
             <title>0.10.14</title>
             <pubDate>Sun, 15 Nov 2026 20:38:57 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
