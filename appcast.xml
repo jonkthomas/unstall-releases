@@ -3,6 +3,22 @@
     <channel>
         <title>Unstall</title>
         <item>
+            <title>0.10.16</title>
+            <pubDate>Sun, 22 Nov 2026 16:21:10 -0500</pubDate>
+            <link>https://jonkthomas.github.io/unstall-releases/</link>
+            <sparkle:version>20261122211708</sparkle:version>
+            <sparkle:shortVersionString>0.10.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[# Unstall 0.10.16
+
+- Long pi questions asked in a small terminal pane can now be answered from your iPhone and the notch; the full question is shown.
+- Questions that can only be answered on the Mac show the question text and a pointer to the terminal instead of buttons that do nothing.
+]]></description>
+            <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.16/Unstall.zip" length="19622935" type="application/octet-stream" sparkle:edSignature="+ihVXlhqnJQC7gwL0/srI1wO8SW9PXu2BPjB+Ivey3PQ7AOsoRY2Zo4u3eYLeYAmD5MAI2Pp2IN1MCcRglhBAw=="/>
+        </item>
+    
+<item>
             <title>0.10.15</title>
             <pubDate>Sat, 21 Nov 2026 13:57:06 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -17,7 +33,7 @@
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.15/Unstall.zip" length="19610072" type="application/octet-stream" sparkle:edSignature="C5Za0MTIuECYFawDCcXlzLk7H+E9mTYfkXOsuxsbOWfwVVxjg3+tcpMO0uHUXGiz2rwdAM2AXDlAatO81i0VBg=="/>
         </item>
-        <item>
+<item>
             <title>0.10.14</title>
             <pubDate>Sun, 15 Nov 2026 20:38:57 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -34,7 +50,7 @@
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.14/Unstall.zip" length="19607105" type="application/octet-stream" sparkle:edSignature="UenCv6XcBACi4TUeo/fyw2Jq5kROtXzDbb4or/SJC/VTPvAzCE4BR6uuTlvQBIJ3lcYSnhNAG4KLePO78Nj6Bw=="/>
         </item>
-    <item>
+<item>
             <title>0.10.13</title>
             <pubDate>Sun, 15 Nov 2026 14:25:33 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -47,7 +63,8 @@
 - Needs you no longer keeps questions from agents that have exited.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.13/Unstall.zip" length="19601874" type="application/octet-stream" sparkle:edSignature="syD8PIUJwcfpiX3ZxpcliXFIvAOps6in5WcdC4gKJX8BaM2Vj1t/ymCfdNkt1Z4qQARVOZdn4nPrHnbSPIw4CQ=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.12</title>
             <pubDate>Sun, 15 Nov 2026 12:04:59 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -60,7 +77,8 @@
 - When an agent is waiting on a question you can already answer from your phone, your phone no longer also shows an extra “Agent waiting” item for the same question.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.12/Unstall.zip" length="19595962" type="application/octet-stream" sparkle:edSignature="q/t9ucGnsxnbQQ4YIRDrWfeNZAOYN1s8pi/hy9Cip0bunpnDDFBTXppW51GYxLSqQbhPykmfOUi1mkJXNzXIAw=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.11</title>
             <pubDate>Sun, 15 Nov 2026 00:58:39 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -76,7 +94,8 @@
 - Pi and Codex questions with hidden options stay in the terminal to prevent selecting the wrong answer.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.11/Unstall.zip" length="19595208" type="application/octet-stream" sparkle:edSignature="GtZI4vsyJa+efFfHPw6hVVn6Mkk3AkinZuf5wot1dn/xXNk+a/ixueWurwzlRWD8AhCHnNRNMMsn0mTe5MylAQ=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.10</title>
             <pubDate>Sat, 14 Nov 2026 21:28:21 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -91,7 +110,8 @@
 - Answers that couldn't be confirmed clear from the iPhone after 10 minutes and can still be answered from the Mac.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.10/Unstall.zip" length="19590147" type="application/octet-stream" sparkle:edSignature="EmwR4kz3P9jME0lugcoqjrZNpF/NZhnOBa6EWOWpqavfBtxvKg6kvDqwyIf2tM1g0q6+gRwCxeWB1J3RpyiVBw=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.9</title>
             <pubDate>Sat, 14 Nov 2026 17:34:15 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -107,7 +127,8 @@
 - Open unsupported prompts in the terminal with the “Answer in terminal” action.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.9/Unstall.zip" length="19569586" type="application/octet-stream" sparkle:edSignature="fp6ZLt3cnBVg+nHvBKZtM2LaYcoxTI1NqBwE/TxTJDDEktAWYk3/pcPV6DgWNJX0ExR9fTQn35nUEoXwbs5fBg=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.8</title>
             <pubDate>Sun, 08 Nov 2026 18:08:58 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -124,7 +145,8 @@
 - In the updated iPhone companion, open web links in questions without submitting an answer.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.8/Unstall.zip" length="19566879" type="application/octet-stream" sparkle:edSignature="7w9rbYcn8fC2f58uOVIBBhjTX1Bg4G9ZG5hrEksbvjaUqt1ZAnESuFJitMS60Q+uV8p3pA2vvPBq4EROkRulCw=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.7</title>
             <pubDate>Fri, 06 Nov 2026 19:14:29 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -143,7 +165,8 @@ Existing Muse behavior is unchanged. New Muse native-session support is deferred
 The iPhone companion remains in private TestFlight testing (version 0.1.0, build 9).
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.7/Unstall.zip" length="19532573" type="application/octet-stream" sparkle:edSignature="nMd54MJxiiNUnx+cizXd2JW4CnHVhIPdGsyU3Rsi04gUlX2elOyHV2FflmMrpKWZcpkiRoRxGly4b9FSlZSfDw=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.6</title>
             <pubDate>Fri, 06 Nov 2026 11:09:03 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -158,7 +181,8 @@ The iPhone companion remains in private TestFlight testing (version 0.1.0, build
 The iPhone companion remains in private TestFlight testing and is not yet publicly available.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.6/Unstall.zip" length="19432462" type="application/octet-stream" sparkle:edSignature="tpad5bKUjutjAckE9vihQucp0hR8DXUCitnGlXSHzK0g1YiuK3QWuVxThmuKh5bt8ZakRnf6q0dMAdJhgLm0Dg=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.5</title>
             <pubDate>Thu, 05 Nov 2026 12:00:43 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -173,7 +197,8 @@ The iPhone companion remains in private TestFlight testing and is not yet public
 The iPhone companion remains in private TestFlight testing and is not yet publicly available.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.5/Unstall.zip" length="18884705" type="application/octet-stream" sparkle:edSignature="NYCdXoGGeUpOGf2I0z2BDGNrDLRtlK1SVa44ilxFt+Wl7y93aGa7RqlnKLga15XzdJQqVlOMGCwFS5nXMQ7CCQ=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.4</title>
             <pubDate>Sun, 01 Nov 2026 20:46:24 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -187,7 +212,8 @@ The iPhone companion remains in private TestFlight testing and is not yet public
 The iPhone companion remains in private TestFlight testing and is not yet publicly available.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.4/Unstall.zip" length="18855136" type="application/octet-stream" sparkle:edSignature="IpJCljHaY77FObMDoxSQQQPGPcLnLvy8/Kne65zmvUGcyE9WAPmDFgfhdRSQXUpjoyRJlCiEMySLbXIVTfm1AQ=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.3</title>
             <pubDate>Sun, 01 Nov 2026 13:43:05 -0500</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -201,7 +227,8 @@ The iPhone companion remains in private TestFlight testing and is not yet public
 The iPhone companion remains in private TestFlight testing and is not yet publicly available.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.3/Unstall.zip" length="18854159" type="application/octet-stream" sparkle:edSignature="crmmhZs54POV9zwV8nWw03xqRpzJvXNHX6YT2LVeUUsS8kuOUCA+McpNGnqwsJQm+tlam13wBBivKchapuJVAw=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.2</title>
             <pubDate>Sat, 31 Oct 2026 23:46:39 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -218,7 +245,8 @@ The iPhone companion remains in private TestFlight testing and is not yet public
 The iPhone companion remains in private TestFlight testing and is not yet publicly available.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.2/Unstall.zip" length="18811925" type="application/octet-stream" sparkle:edSignature="/cVSNixi6mu9YYP86nMvgHxaKrl/nIm49STmguO60vWKMP8jwV4SYLYwSKrp7e0E51HO8qxGy01ABUq3mN1hCw=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.10.1</title>
             <pubDate>Thu, 29 Oct 2026 00:43:29 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -235,7 +263,8 @@ This version also restores the anonymous usage statistics that 0.10.0 briefly sh
 The iPhone app is available through private TestFlight testing and is not yet publicly available.
 ]]></description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.10.1/Unstall.zip" length="18759415" type="application/octet-stream" sparkle:edSignature="TqiHYLcEZiJJORVPlzsENRAsB8j5nkfUsvtLMUEYjgrJueM7t7C/+jtlQrR8SbYndXGKVcMsuGGpKAgFSukrBg=="/>
-        </item><item>
+        </item>
+<item>
             <title>0.9.3</title>
             <pubDate>Wed, 28 Oct 2026 09:54:59 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -246,7 +275,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
             <description sparkle:format="plain-text">Approval prompts from machines added with `herdr machine` (e.g. pi's production-approve picker) now appear in the notch and on the paired iPhone, and can be approved or denied from either.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.3/Unstall.zip" length="18663967" type="application/octet-stream" sparkle:edSignature="KRmoFW2M95lP2gO+a+cNy5y03idZZU7F0YsOJ8KfkCHMOmv6PjD9HcwMgTCQMzByamczy6ZQ24nZWcV6Y+0gCA==" />
-        </item><item>
+        </item>
+<item>
             <title>0.9.2</title>
             <pubDate>Tue, 27 Oct 2026 22:49:37 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -257,7 +287,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
             <description sparkle:format="plain-text">Permission requests from Mac agents can now be approved or denied from the iPhone. The iPhone app is in private testing and not yet publicly available.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.2/Unstall.zip" length="18656902" type="application/octet-stream" sparkle:edSignature="S45BGBIO/gAyXyr3pmDwU6CNiDZiwW2tXD5zBqjjbRBxZq8TipUvBdkSBG6HMjCAAqssFxcCzxQX8iu+TYGQBQ==" />
-        </item><item>
+        </item>
+<item>
             <title>0.9.1</title>
             <pubDate>Tue, 27 Oct 2026 18:24:06 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -268,7 +299,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
             <description sparkle:format="plain-text">iPhone pairing now works when Tailscale is connected. The iPhone app is in private testing and not yet publicly available.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.1/Unstall.zip" length="18656985" type="application/octet-stream" sparkle:edSignature="onmswFZK1wT8UzYOmOif5HxKbRAWZJqydKOxr2jifkb/O1kqeiIt44Y76GNHmdW5rgSnEtGdlY0M9Tnu3HcfBQ==" />
-        </item><item>
+        </item>
+<item>
             <title>0.9.0</title>
             <pubDate>Tue, 27 Oct 2026 17:07:32 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -283,7 +315,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
 - The Mac listener runs during pairing and while at least one iPhone is paired. Revoke a phone in Settings to remove its access; revoking the last phone stops the listener.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.9.0/Unstall.zip" length="18656710" type="application/octet-stream" sparkle:edSignature="rnhrR6RkamXdzzkH09Jr+EDRZtkcp+7M5cfnrCzI1gDSnUFIM+y7+jnnMV/D0esHzQAYQzXTaQ/tFkWD0F0TCA==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.10</title>
             <pubDate>Mon, 26 Oct 2026 13:32:15 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -298,7 +331,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
 - Jump on another Mac's agent focuses its pane and brings herdr forward. If that machine is not showing, pick it in herdr's sidebar; Unstall shows a reminder when it cannot confirm the displayed machine.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.10/Unstall.zip" length="16195793" type="application/octet-stream" sparkle:edSignature="otwKdHiUBHZOVmvismwxicPcU+7xT736MC+dBpdhPeSYuYa2Du5l40Iag+RO7G3i2O6+ZeLGJvJsl0mFruUrAw==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.9</title>
             <pubDate>Sun, 25 Oct 2026 21:03:59 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -313,7 +347,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
 - Unsent replies and new-message drafts are kept while Unstall stays open and restored when the same session reconnects. Recovered approval replies need to be re-attached before sending; drafts are never sent automatically.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.9/Unstall.zip" length="16145923" type="application/octet-stream" sparkle:edSignature="RtlJEW4+aimv3kFAn3ULTVgXJr3OsPxXH1875TUQwUxvQO3TCPNyJbrq9haGD6uedNYK52m7E5O3fZZHdbk7BQ==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.8</title>
             <pubDate>Thu, 22 Oct 2026 18:36:03 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -328,7 +363,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
 - Answer pi questions that allow multiple choices with checkboxes, then send your selections with Submit.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.8/Unstall.zip" length="16106505" type="application/octet-stream" sparkle:edSignature="I8TcIfaNeteH7CyzkDXspUFRSKgdzcSTugapwDqPgXIw1FLIuB2hL4v308aNXzcK3OPyFX5x9kQDKdiLbXbpCA==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.7</title>
             <pubDate>Thu, 22 Oct 2026 14:03:27 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -343,7 +379,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
 - Editing keeps your session filter, and leaving out a username still uses your existing SSH configuration defaults.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.7/Unstall.zip" length="16071307" type="application/octet-stream" sparkle:edSignature="HmalwfSYwXrZhJS8O1zs2D5d2Ojye/XC3Oz2sRn+0YToWxmGlzkaHnjFkKfqIShC4TxmMIVNOfazpCWiiyJwBw==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.6</title>
             <pubDate>Thu, 22 Oct 2026 11:43:26 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -360,7 +397,8 @@ The iPhone app is available through private TestFlight testing and is not yet pu
 Ordinary replies still send in one turn; high-risk actions still require confirmation, and production actions still need manual approval. The gap after the getting-ready chime has not been removed.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.6/Unstall.zip" length="16065258" type="application/octet-stream" sparkle:edSignature="9pIk2/9xVuwGFJFrkNhXFAsXXs7YKwhawXQKvOvOBh+y/Sj1vQ4Z99e9e75klyzcqWFMj+gsOqe9kOtkkoeKBA==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.5</title>
             <pubDate>Wed, 21 Oct 2026 17:58:16 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -374,7 +412,8 @@ Ordinary replies still send in one turn; high-risk actions still require confirm
 - The optional email and feedback cards can now send your submissions. Sending is your choice; you can skip either card.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.5/Unstall.zip" length="16051005" type="application/octet-stream" sparkle:edSignature="Sv5hr4Aav+nWz0pqjW+m4AZm7ohvIcneW8awGwNRifj4y6H3VDgcv7tn3LJXRT69kCb8fkeclvwL1+fima6rAA==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.4</title>
             <pubDate>Wed, 21 Oct 2026 15:24:45 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -392,7 +431,8 @@ Ordinary replies still send in one turn; high-risk actions still require confirm
 - Keeps the Muse approval and herdr connection crash fix shipped in 0.8.3.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.4/Unstall.zip" length="16051202" type="application/octet-stream" sparkle:edSignature="wfHOdRpvwQGC4MtvMnJLRBs1GDUgLv06G7p8dxT9bD4OX5SqwHRbJBOeh5ZYDUydMhn7gaWJhB8c+HlCs41WAw==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.3</title>
             <pubDate>Tue, 20 Oct 2026 18:45:16 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -402,7 +442,8 @@ Ordinary replies still send in one turn; high-risk actions still require confirm
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="plain-text">Unstall now shows Grok, Muse and OpenCode sessions in the notch, and Grok is no longer labelled as Claude. You can answer approvals from the notch by click or voice: OpenCode through its plugin, Grok when started with `notch-agent grok`, and Muse shell commands through its hook. Connect each agent in Settings first. Allow always only appears where the exact saved rule is known.</description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.3/Unstall.zip" length="15817250" type="application/octet-stream" sparkle:edSignature="qHcysJXZ7RR2da0/imdAwemZifKfjbpxU6QKJT7BuXq+2djJGKUPXI4w29yJ0HElRU1WTXnddDJlyJYLX6nLDA==" />
-        </item><item>
+        </item>
+<item>
             <title>0.8.2</title>
             <pubDate>Mon, 19 Oct 2026 18:30:14 -0400</pubDate>
             <link>https://jonkthomas.github.io/unstall-releases/</link>
@@ -422,5 +463,6 @@ Voice remains off by default. Existing preferences are preserved. Automatic upda
 The ZIP is for in-app updates. The DMG is for manual installation. Both are signed and notarized by Voxtur Inc.
 </description>
             <enclosure url="https://github.com/jonkthomas/unstall-releases/releases/download/v0.8.2/Unstall.zip" length="14590109" type="application/octet-stream" sparkle:edSignature="xodKg1Uu3lDg6BpoFj39BoRix2CcK42lJ7l0zjqfT5UZYRr9laTC5NI1S+4153SjeDu8HsJZ9duomyNFuNOJAQ==" />
-        </item></channel>
+        </item>
+</channel>
 </rss>
